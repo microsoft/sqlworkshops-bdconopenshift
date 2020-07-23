@@ -8,11 +8,11 @@
 
 <img style="float: left; margin: 0px 15px 15px 0px;" src="https://raw.githubusercontent.com/microsoft/sqlworkshops/master/graphics/textbubble.png"> <h2>About this Workshop</h2>
 
-Welcome to this Microsoft solutions workshop on *SQL Server Big Data Clusters on Red Hat OpenShift*. In this workshop, you'll learn <TODO: Describe what the students will learn>
+Welcome to this Microsoft solutions workshop on *SQL Server Big Data Clusters on Red Hat OpenShift*. In this workshop, you'll learn how to implement a SQL Server Big Data Cluster on the Red Hat OpenShift platform. 
 
-The focus of this workshop is to understand <TODO: Describe the workshop's primay focus in one sentence>
+This workshop focuses on the **Architect** role (*the person or team tasked with planning, designing and implementing the system*). This course sets the groundwork for the **Operator** role (*those who manage, monitor and secure the system*) and the **Developer** role (*those who create applications and background services for the system*). 
 
-You'll start by <TODO: Describe what the flow of the workshop will be>, with a focus on how to extrapolate what you have learned to create other solutions for your organization.
+You'll start by understanding Virtualization, and the Kubernetes Orchestration system. You'll learn more about the Red Hat OpenShift platform, and how SQL Server Big Data Clusters is implemented on this environment, with a focus on how to extrapolate what you have learned to create other solutions for your organization.
 
 This [github README.MD file](https://lab.github.com/githubtraining/introduction-to-github) explains how the workshop is laid out, what you will learn, and the technologies you will use in this solution. To download this Lab to your local computer, click the **Clone or Download** button you see at the top right side of this page. [More about that process is here](https://help.github.com/en/github/creating-cloning-and-archiving-repositories/cloning-a-repository). 
 
@@ -22,23 +22,16 @@ You can view all of the [courses and other workshops our team has created at thi
 
 <img style="float: left; margin: 0px 15px 15px 0px;" src="https://raw.githubusercontent.com/microsoft/sqlworkshops/master/graphics/checkmark.png"> <h3>Learning Objectives</h3>
 
-In this workshop you'll learn:
+In this workshop you'll learn how to:
 <br>
 
-- <TODO: Bullet-point on learning obective>
-- <TODO: Bullet-point on learning obective>
-- <TODO: Bullet-point on learning obective>
-
-<TODO: Enter the text you use when you submit the description for this course to a presentation, or advertising>
-
-The goal of this workshop is to train <TODO: Describe who you would train for this and why>.
-
-The concepts and skills taught in this workshop form the starting points for:
-
-    <TODO: Job Description and level of person who is the primary that should attend and the reason>.
-    For instance: Solution Architects and Developers, to understand how to put together an end to end solution.
-    <TODO: Job Description and level of person who is the secondary that should attend and the reason>.
-    <TODO: Job Description and level of person who is the third-level of who might want to attend and the reason>.
+- Leverage Basic Linux  Skills
+- Implement Virtualization (Containers)
+- Implment an Orchestration system (Kubernetes)
+- Implement an OpenShift architecture
+- Deploy a SQL Server Big Data Cluster (BDC) on OpenShift
+- Use BDC Interfaces and Endpoints
+- Implementing BDC Management and Monitoring
 
 <p style="border-bottom: 1px solid lightgrey;"></p>
 <img style="float: left; margin: 0px 15px 15px 0px;" src="https://raw.githubusercontent.com/microsoft/sqlworkshops/master/graphics/building1.png"> <h2>Business Applications of this Workshop</h2>
