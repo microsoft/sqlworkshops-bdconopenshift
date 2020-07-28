@@ -1,6 +1,6 @@
 ![](graphics/microsoftlogo.png)
 
-# Workshop: SQL Server Big Data Clusters on Red Hat OpenShift
+# Workshop: Architecting SQL Server Big Data Cluster Solutions on Red Hat OpenShift
 
 #### <i>A Microsoft Course from the SQL Server team</i>
 
@@ -8,11 +8,13 @@
 
 <img style="float: left; margin: 0px 15px 15px 0px;" src="https://raw.githubusercontent.com/microsoft/sqlworkshops/master/graphics/textbubble.png"> <h2>About this Workshop</h2>
 
-Welcome to this Microsoft solutions workshop on *SQL Server Big Data Clusters on Red Hat OpenShift*. In this workshop, you'll learn how to implement a SQL Server Big Data Cluster on the Red Hat OpenShift platform. 
+Welcome to this Microsoft solutions workshop on *Architecting SQL Server Big Data Cluster Solutions on Red Hat OpenShift*. In this workshop, you'll learn how to plan, implement and operate a SQL Server Big Data Cluster on the Red Hat OpenShift platform. 
 
-This workshop focuses on the **Architect** role (*the person or team tasked with planning, designing and implementing the system*). This course sets the groundwork for the **Operator** role (*those who manage, monitor and secure the system*) and the **Developer** role (*those who create applications and background services for the system*). 
+This workshop focuses on the **Architect** role (*the person or team tasked with planning, designing and implementing the system*). This course sets the groundwork for the **Operator** role (*those who manage, monitor and secure the system*) and the **Developer** role (*those who create applications and background services for the system*). This course is designed as a "Delta" course explaining the differences of planning, installing and operating a SQL Server Big Data Cluster on a Red Hat OpenShift cluster. 
 
-You'll start by understanding Virtualization, and the Kubernetes Orchestration system. You'll learn more about the Red Hat OpenShift platform, and how SQL Server Big Data Clusters is implemented on this environment, with a focus on how to extrapolate what you have learned to create other solutions for your organization.
+> **NOTE:** You should be familiar with Linux, Containers, Kubernetes, Red Hat OpenShift, and SQL Server Big Data Clusters prior to taking this course. Resources are provided below if you are new to these technologies. 
+
+You'll start with a quick review of your understanding of Virtualization and the Kubernetes Orchestration system, and how SQL Server Big Data Clusters is implemented on this environment. You'll also review the key concepts of the Red Hat OpenShift platform. This rest of the course focuses on learning now the SQL Server Big Data Cluster system works on the Red Hat OpenShift Platform, whether on-premises on in a Cloud environment.
 
 This [github README.MD file](https://lab.github.com/githubtraining/introduction-to-github) explains how the workshop is laid out, what you will learn, and the technologies you will use in this solution. To download this Lab to your local computer, click the **Clone or Download** button you see at the top right side of this page. [More about that process is here](https://help.github.com/en/github/creating-cloning-and-archiving-repositories/cloning-a-repository). 
 
@@ -25,54 +27,36 @@ You can view all of the [courses and other workshops our team has created at thi
 In this workshop you'll learn how to:
 <br>
 
-- Leverage Basic Linux  Skills
-- Implement Virtualization (Containers)
-- Implment an Orchestration system (Kubernetes)
-- Implement an OpenShift architecture
-- Deploy a SQL Server Big Data Cluster (BDC) on OpenShift
-- Use BDC Interfaces and Endpoints
-- Implementing BDC Management and Monitoring
-
-<p style="border-bottom: 1px solid lightgrey;"></p>
-<img style="float: left; margin: 0px 15px 15px 0px;" src="https://raw.githubusercontent.com/microsoft/sqlworkshops/master/graphics/building1.png"> <h2>Business Applications of this Workshop</h2>
-
-Businesses require <TODO: Describe the reason the student's business or organization would be interested in the information. Be detailed about the solutions it addresses> 
-
-Some industry examples of <TODO: Workshop Topic> are <TODO: Enter Sectors and use briefly>, to name just a few.
-
-<p style="border-bottom: 1px solid lightgrey;"></p>
-
-<img style="float: left; margin: 0px 15px 15px 0px;" src="https://raw.githubusercontent.com/microsoft/sqlworkshops/master/graphics/listcheck.png"> <h2>Technologies used in this Workshop</h2>
-
-The solution includes the following technologies - although you are not limited to these, they form the basis of the workshop. At the end of the workshop you will learn how to extrapolate these components into other solutions. You will cover these at an overview level, with references to much deeper training provided.
-
- <table style="tr:nth-child(even) {background-color: #f2f2f2;}; text-align: left; display: table; border-collapse: collapse; border-spacing: 2px; border-color: gray;">
-
-  <tr><th style="background-color: #1b20a1; color: white;">Technology</th> <th style="background-color: #1b20a1; color: white;">Description</th></tr>
-
-  <tr><td><i>TODO: Technology name not owned by Microsoft that you will cover</i></td><td>TODO: Reason the student needs to learn it</td></tr>
-  <tr><td>TODO: Technology name owned by Microsoft that you will cover</td><td>TODO: Reason the student needs to learn it</td></tr>
-
-</table>
+- Plan a layout for the SQL Server Big Data Cluster platform on a Red Hat OpenShift environment as a solution
+- Plan a sizing strategy for the solution
+- Select a target location for the Red Hat OpenShift environment (onp-premises or in-Cloud)
+- Implement the proper licensing for the solution
+- Deploy a SQL Server Big Data Cluster to Red Hat OpenShift
+- Leverage the Endpoints and Interfaces for the solution
+- Implement a security strategy for the solution
+- Manage the solution using built-in tools for each component, and comprehensive monitoring with Grafana and Kibana
 
 <p style="border-bottom: 1px solid lightgrey;"></p>
 
 <img style="float: left; margin: 0px 15px 15px 0px;" src="https://raw.githubusercontent.com/microsoft/sqlworkshops/master/graphics/owl.png"> <h2>Before Taking this Workshop</h2>
 
-You'll need a local system that you are able to install software on. The workshop demonstrations use Microsoft Windows as an operating system and all examples use Windows for the workshop. Optionally, you can use a Microsoft Azure Virtual Machine (VM) to install the software on and work with the solution.
+ - You'll need a local system that you are able to install software on. The workshop demonstrations use Microsoft Windows as an operating system and all examples use Windows for the workshop. Optionally, you can use a Microsoft Azure Virtual Machine (VM) to install the software on and work with the solution.
+- You must have a Microsoft Azure account with the ability to create assets.
 
-You must have a Microsoft Azure account with the ability to create assets.
+This workshop expects that you understand Linux, Virtualization, the Kubernetes Orchestration system, SQL Server Big Data Clusters and Red Hat OpenShift platform. If you are new to these technologies, there are a  few references you can complete prior to taking the course:
 
-This workshop expects that you understand <TODO: Enter a brief solution for what a student should know before taking the workshop>.
+ <table style="tr:nth-child(even) {background-color: #f2f2f2;}; text-align: left; display: table; border-collapse: collapse; border-spacing: 2px; border-color: gray;">
 
-If you are new to these, here are a few references you can complete prior to class:
+  <tr><th style="background-color: #1b20a1; color: white;">Technology</th> <th style="background-color: #1b20a1; color: white;">Description</th></tr>
 
-<TODO: Enter some pre-work courses or books or whatever that the student could use to prep>
--  [Reference Name](https://url)
--  [Reference Name](https://url)
--  [Reference Name](https://url)
--  [Reference Name](https://url)
+  <tr><td>Linux</td><td><a href="https://www.digitalocean.com/community/tutorial_series/getting-started-with-linux" target="_blank">Online course from Community Tutorials</a></td></tr>
+  <tr><td>Containers</td><td><a href="https://docker-curriculum.com/" target="_blank">Online course from Docker</a></td></tr>
+  <tr><td>Kubernetes</td><td><a href="https://www.katacoda.com/courses/kubernetes" target="_blank">Online course with free online environment from Katacoda</a></td></tr>
+  <tr><td>Red Hat OpenShift Platform</td><td><a href="https://learn.openshift.com/" target="_blank">Online course from Red Hat with free online environment</a></td></tr>
+  <tr><td>Microsoft SQL Server</td><td><a href="https://www.microsoft.com/en-us/learning/sql-training.aspx" target="_blank">Multiple training options from Microsoft</a></td></tr>
+  <tr><td>Microsoft SQL Server Big Data Clusters</td><td><a href="https://github.com/Microsoft/sqlworkshops-bdc" target="_blank">Online workshop from Microsoft</a></td></tr>
 
+</table>
 
 <img style="float: left; margin: 0px 15px 15px 0px;" src="https://raw.githubusercontent.com/microsoft/sqlworkshops/master/graphics/bulletlist.png"> <h3>Setup</h3>
 
