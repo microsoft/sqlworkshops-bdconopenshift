@@ -29,7 +29,7 @@ In this workshop you'll learn how to:
 
 - Plan a layout for the SQL Server Big Data Cluster platform on a Red Hat OpenShift environment as a solution
 - Plan a sizing strategy for the solution
-- Select a target location for the Red Hat OpenShift environment (onp-premises or in-Cloud)
+- Select a target location for the Red Hat OpenShift environment (on-premises or in-Cloud)
 - Implement the proper licensing for the solution
 - Deploy a SQL Server Big Data Cluster to Red Hat OpenShift
 - Leverage the Endpoints and Interfaces for the solution
@@ -41,7 +41,7 @@ In this workshop you'll learn how to:
 <img style="float: left; margin: 0px 15px 15px 0px;" src="https://raw.githubusercontent.com/microsoft/sqlworkshops/master/graphics/owl.png"> <h2>Before Taking this Workshop</h2>
 
  - You'll need a local system that you are able to install software on. The workshop demonstrations use Microsoft Windows as an operating system and all examples use Windows for the workshop. Optionally, you can use a Microsoft Azure Virtual Machine (VM) to install the software on and work with the solution.
-- You must have a Microsoft Azure account with the ability to create assets.
+- You must have a Microsoft Azure account with the ability to create assets for the Red Hat OpenShift deployment ([more information here](https://azure.microsoft.com/en-us/services/openshift/))
 
 This workshop expects that you understand Linux, Virtualization, the Kubernetes Orchestration system, SQL Server Big Data Clusters and Red Hat OpenShift platform. If you are new to these technologies, there are a  few references you can complete prior to taking the course:
 
