@@ -31,6 +31,7 @@ In this workshop you'll learn how to:
 - Plan a sizing strategy for the solution
 - Select a target location for the Red Hat OpenShift environment (on-premises or in-Cloud)
 - Implement the proper licensing for the solution
+- Optimize the Red Hat OpenShift environment for the solution
 - Deploy a SQL Server Big Data Cluster to Red Hat OpenShift
 - Leverage the Endpoints and Interfaces for the solution
 - Implement a security strategy for the solution
