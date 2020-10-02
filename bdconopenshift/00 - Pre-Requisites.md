@@ -55,7 +55,18 @@ Your workshop invitation may have instructed you that they will provide a Micros
 <p><img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/point1.png"><b>Activity 2: TODO: Any other things they need to do</b></p>
 <br>
 
-<TODO: Explain whatever esle they need to do.>
+<table style="tr:nth-child(even) {background-color: #f2f2f2;}; text-align: left; display: table; border-collapse: collapse; border-spacing: 2px; border-color: gray;">
+
+  <tr><th style="background-color: #1b20a1; color: white;">Technology</th> <th style="background-color: #1b20a1; color: white;">Description</th></tr>
+
+  <tr><td>Linux</td><td><a href="https://www.digitalocean.com/community/tutorial_series/getting-started-with-linux" target="_blank">Online course from Community Tutorials</a></td></tr>
+  <tr><td>Containers</td><td><a href="https://docker-curriculum.com/" target="_blank">Online course from Docker</a></td></tr>
+  <tr><td>Kubernetes</td><td><a href="https://www.katacoda.com/courses/kubernetes" target="_blank">Online course with free online environment from Katacoda</a></td></tr>
+  <tr><td>Red Hat OpenShift Platform</td><td><a href="https://learn.openshift.com/" target="_blank">Online course from Red Hat with free online environment</a></td></tr>
+  <tr><td>Microsoft SQL Server</td><td><a href="https://www.microsoft.com/en-us/learning/sql-training.aspx" target="_blank">Multiple training options from Microsoft</a></td></tr>
+  <tr><td>Microsoft SQL Server Big Data Clusters</td><td><a href="https://github.com/Microsoft/sqlworkshops-bdc" target="_blank">Online workshop from Microsoft</a></td></tr>
+
+</table>
 
 <p><img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/point1.png"><b>Activity 2: TODO: Step within Activity.</b></p>
 <br>
