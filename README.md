@@ -85,15 +85,15 @@ This is a modular workshop, and in each section, you'll learn concepts, technolo
 
   <tr><td style="background-color: AliceBlue; color: black;"><b>Module</b></td><td style="background-color: AliceBlue; color: black;"><b>Topics</b></td></tr>
 
-  <tr><td><a href="url" target="_blank">00 - Pre-Requisites </a></td><td> Requirements for knowledge and technology before you start the course Modules</td></tr>
+  <tr><td><a href="https://github.com/microsoft/sqlworkshops-bdconopenshift/blob/main/bdconopenshift/00%20-%20Pre-Requisites.md" target="_blank">00 - Pre-Requisites </a></td><td> Requirements for knowledge and technology before you start the course Modules</td></tr>
   
-  <tr><td style="background-color: AliceBlue; color: black;"><a href="url" target="_blank">01 - Introduction and Course Scenario </a> </td><td td style="background-color: AliceBlue; color: black;"> Provides a quick refresher on OpenShift and SQL Server Big Data Clusters technologies and terms, and explains a real-world scenario used in the course  </td></tr>
+  <tr><td style="background-color: AliceBlue; color: black;"><a href="https://github.com/microsoft/sqlworkshops-bdconopenshift/blob/main/bdconopenshift/01%20-%20Introduction.md" target="_blank">01 - Introduction and Course Scenario </a> </td><td td style="background-color: AliceBlue; color: black;"> Provides a quick refresher on OpenShift and SQL Server Big Data Clusters technologies and terms, and explains a real-world scenario used in the course  </td></tr>
   
-  <tr><td><a href="url" target="_blank">02 - Planning </a></td><td> Covers the process for planning the layout, configuration, and other settings for a solution</td></tr>
+  <tr><td><a href="https://github.com/microsoft/sqlworkshops-bdconopenshift/blob/main/bdconopenshift/02%20-%20Planning.md" target="_blank">02 - Planning </a></td><td> Covers the process for planning the layout, configuration, and other settings for a solution</td></tr>
   
-  <tr><td style="background-color: AliceBlue; color: black;"><a href="url" target="_blank">03 - Deployment and Operation</a> </td><td td style="background-color: AliceBlue; color: black;"> TODO: Module Description</td></tr>  
+  <tr><td style="background-color: AliceBlue; color: black;"><a href="https://github.com/microsoft/sqlworkshops-bdconopenshift/blob/main/bdconopenshift/03%20-%20Deployment.md" target="_blank">03 - Deployment and Operation</a> </td><td td style="background-color: AliceBlue; color: black;"> TODO: Module Description</td></tr>  
   
-  <tr><td><a href="url" target="_blank">04 - Optimizing </a></td><td> Explains the processes, configuration, and other settings to optimize performance for the solution and the criteria to create the proper environment</td></tr>
+  <tr><td><a href="https://github.com/microsoft/sqlworkshops-bdconopenshift/blob/main/bdconopenshift/04%20-%20Optimization.md" target="_blank">04 - Optimizing </a></td><td> Explains the processes, configuration, and other settings to optimize performance for the solution and the criteria to create the proper environment</td></tr>
 
 </table>
 
@@ -129,5 +129,5 @@ Microsoft's general trademark guidelines can be found at http://go.microsoft.com
 
 Privacy information can be found at https://privacy.microsoft.com/en-us/
 
-Microsoft and any contributors reserve all other rights, whether under their respective copyrights, patents,
+> Microsoft and any contributors reserve all other rights, whether under their respective copyrights, patents,
 or trademarks, whether by implication, estoppel or otherwise.
