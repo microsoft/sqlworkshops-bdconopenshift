@@ -20,25 +20,51 @@ In each module you'll get more references, which you should follow up on to lear
 
 <br>
 
-TODO: Topic Description
+Red Hat® OpenShift® is a hybrid cloud, enterprise Kubernetes application platform. [You can view a short overview video here](https://www.openshift.com/learn/what-is-openshift#). Azure Red Hat OpenShift is a platform for developing and running containerized applications. It is designed to allow applications and the data centers that support them to expand from just a few machines and applications to thousands of machines that serve millions of clients.
 
 <br>
 
-<img style="height: 400; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);" src="https://marketing-outfit-prod-images.s3.us-west-2.amazonaws.com/1b7a411800876a6db1e2dc220b092d8a/cl-openshift-container-platform-datasheet_img1.PNG">
+<img style="height: 400; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);" src="https://www.openshift.com/hubfs/images/illustrations/openshift-container-platform-stack_desktop.svg">
 
 <br>
 
-<p><img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/point1.png"><b>Activity: TODO: Activity Name</b></p>
+### Architecture 
 
-TODO: Activity Description and tasks
+Although OpenShift is based on Kubernetes, there are differences in the way it is architected.  Nodes, Pods, and Storage are similar to Kubernetes, with slight differences.The table below illustrates a few major concepts in OpenShift and contains references to learn more. 
 
-<p><img style="margin: 0px 15px 15px 0px;" src="../graphics/checkmark.png"><b>Description</b></p>
+<table style="tr:nth-child(even) {background-color: #f2f2f2;}; text-align: left; display: table; border-collapse: collapse; border-spacing: 5px; border-color: gray;">
 
-TODO: Enter activity description with checkbox
+  <tr><td style="background-color: AliceBlue; color: black;"><b>Concept</b></td><td style="background-color: AliceBlue; color: black;"><b>Descroption</b></td></tr>
+
+  <tr><td><a href="https://docs.openshift.com/container-platform/4.6/architecture/architecture.html" target="_blank">RHCOS </a></td><td> OpenShift Container Platform uses Red Hat Enterprise Linux CoreOS (RHCOS), a container-oriented operating system that combines some of the best features and functions of the CoreOS and Red Hat Atomic Host operating systems</td></tr>
+  
+  <tr><td style="background-color: AliceBlue; color: black;"><a href="https://docs.openshift.com/container-platform/4.6/applications/projects/working-with-projects.html" target="_blank">Projects </a> </td><td td style="background-color: AliceBlue; color: black;"> Projects encapsulate a Namespace, and access to the Namespace is controlled through a Project through an authentication and authorization model based on Users and Ggroups. This allows Projects to separate Namespaces</td></tr>
+
+  <tr><td><a href="https://docs.openshift.com/container-platform/4.6/architecture/control-plane.html" target="_blank">Control Plane </a></td><td> The Control Plane are a series of machines that manage the OpenShift Container Platform cluster</td></tr>
+
+  <tr><td style="background-color: AliceBlue; color: black;"><a href="https://docs.openshift.com/container-platform/4.6/operators/understanding/olm-what-operators-are.html" target="_blank">Operators </a> </td><td td style="background-color: AliceBlue; color: black;"> Operators are a method of packaging, deploying, and managing a Kubernetes application</td></tr>
+
+  <tr><td><a href="https://docs.openshift.com/container-platform/4.6/architecture/control-plane.html" target="_blank">Control Plane </a></td><td> The Control Plane are a series of machines that manage the OpenShift Container Platform cluster</td></tr>
+
+  <tr><td style="background-color: AliceBlue; color: black;"><a href="https://github.com/microsoft/sqlworkshops-bdconopenshift/blob/main/bdconopenshift/03%20-%20Deployment.md" target="_blank">Web Console and the <i>oc</i> command</a> </td><td td style="background-color: AliceBlue; color: black;"> The primary graphical interface for OpenShift is the web console, a Pod that runs on the master instance. The <a href="https://docs.openshift.com/container-platform/4.6/cli_reference/openshift_cli/usage-oc-kubectl.html" target="_blank"><i>oc</i> command is the primary command-line interface for OpenShift</a>, similar to the kubectl command in Kubernetes, which is also still availability for backwards-compatibility </td></tr>  
+
+  <tr><td><a href="https://www.redhat.com/cms/managed-files/cl-container-security-openshift-cloud-devops-tech-detail-f7530kc-201705-en.pdf?intcmp=701f2000000RQykAAG&extIdCarryOver=true&sc_cid=701f2000001OH7iAAG" target="_blank">Security </a></td><td> Red Hat OpenShift has higher security requirements than Kubernetes. The primary difference is that "run as root" is not permitted on OpenShift</td></tr>
+  
+  <tr><td style="background-color: AliceBlue; color: black;"><a href="https://docs.openshift.com/container-platform/4.6/networking/routes/route-configuration.html" target="_blank">Networking </a> </td><td td style="background-color: AliceBlue; color: black;"> The OpenShift default Router is an HAProxy container providing reverse proxy capabilities.
+A Route is defines rules to apply to incoming connections </td></tr>  
+
+</table>
+
+Other enhancements to Kubernetes in OpenShift Container Platform include improvements in software defined networking (SDN), authentication, log aggregation, monitoring, and routing. OpenShift Container Platform also offers a comprehensive web console and the custom OpenShift CLI (oc) interface.
+
+
+<p><img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/point1.png"><b>Activity: Review Primary Concepts</b></p>
+
+In this Activity you will review a course on using Azure Red Hat OpenShift (ARO) to create a simple application. You may follow the steps or simply read through them to familiarize yourself with the platform you will use for this training. 
 
 <p><img style="margin: 0px 15px 15px 0px;" src="../graphics/checkmark.png"><b>Steps</b></p>
 
-TODO: Enter activity steps description with checkbox
+<a href="https://aroworkshop.io/" target="_blank"><img style="margin: 0px 15px 15px 0px;" src="../graphics/checkbox.png">Click to open this resource</a>, and follow/read the steps you see there.
 
 <p style="border-bottom: 1px solid lightgrey;"></p>
 
@@ -46,14 +72,30 @@ TODO: Enter activity steps description with checkbox
 
 <br>
 
-TODO: Topic Description
-
+SQL Server 2019's Big Data Clusters feature cause use Red Had OpenShift to deploy the power of SQL Server (RDBMS as OLTP), a series of servers used for scaled relational queries (OLAP and HTAP as Data Lake) and Spark/HDFS for large data processing (full scale-out capabilities) within a single operational/security boundary, ion-prem or in the cloud. It also includes a deployment option for applications (applications and scoring target) within the same boundary.    
 <br>
 
 <img style="height: 400; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);" src="https://github.com/microsoft/sqlworkshops-bdc/blob/master/graphics/bdc.png?raw=true">
 
 <br>
 
+The table below illustrates the primary components of SQL Server's Big Data Clusters:
+
+<table style="tr:nth-child(even) {background-color: #f2f2f2;}; text-align: left; display: table; border-collapse: collapse; border-spacing: 5px; border-color: gray;">
+
+  <tr><td style="background-color: AliceBlue; color: black;"><b>Component</b></td><td style="background-color: AliceBlue; color: black;"><b>Description</b></td></tr>
+
+  <tr><td><a href="" target="_blank">Controller Service</a></td><td> Description</td></tr>
+  
+  <tr><td style="background-color: AliceBlue; color: black;"><a href="" target="_blank">SQL Server Master Instance </a> </td><td td style="background-color: AliceBlue; color: black;"> Description</td></tr>
+
+  <tr><td><a href="" target="_blank">Data Pool </a></td><td> Description</td></tr>
+  
+  <tr><td style="background-color: AliceBlue; color: black;"><a href="" target="_blank">Storage Pool </a> </td><td td style="background-color: AliceBlue; color: black;"> Description</td></tr>
+
+  <tr><td><a href="" target="_blank">Application Pool </a></td><td> Description</td></tr>
+  
+</table>
 
 More information on SQL Server Big Data Clusters is at [this reference, part of a larger course dedicated to SQL Server Big Data Clusters Architecture](https://github.com/microsoft/sqlworkshops-bdc/blob/master/SQL2019BDC/02%20-%20SQL%20Server%20BDC%20Components.md). 
 

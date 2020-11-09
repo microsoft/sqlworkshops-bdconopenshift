@@ -77,4 +77,4 @@ For this workshop, you will use Microsoft Windows as the base workstation, altou
 
 <p><img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/geopin.png"><b >Next Steps</b></p>
 
-Next, Continue to <a href="https://github.com/microsoft/sqlworkshops-bdconopenshift/blob/main/bdconopenshift/01%20-%20Introduction.md" target="_blank"><i> 01 - Module</i></a>.
+Next, Continue to <a href="https://github.com/microsoft/sqlworkshops-bdconopenshift/blob/main/bdconopenshift/01%20-%20Introduction.md" target="_blank"><i> 01 Introduction and Use-Case</i></a>.
