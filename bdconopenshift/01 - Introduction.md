@@ -72,7 +72,7 @@ In this Activity you will review a course on using Azure Red Hat OpenShift (ARO)
 
 <br>
 
-SQL Server 2019's Big Data Clusters feature cause use Red Had OpenShift to deploy the power of SQL Server (RDBMS as OLTP), a series of servers used for scaled relational queries (OLAP and HTAP as Data Lake) and Spark/HDFS for large data processing (full scale-out capabilities) within a single operational/security boundary, ion-prem or in the cloud. It also includes a deployment option for applications (applications and scoring target) within the same boundary.    
+SQL Server 2019's Big Data Clusters feature can use the OpenShift platform to deploy the power of SQL Server *(RDBMS as OLTP)*, a series of servers used for scaled relational queries *(OLAP and HTAP as Data Lake)* and Spark/HDFS for large data processing *(full scale-out capabilities)* within a single operational/security boundary, ion-prem or in the cloud. It also includes a deployment option for applications *(applications and scoring target)* within the same boundary.    
 <br>
 
 <img style="height: 400; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);" src="https://github.com/microsoft/sqlworkshops-bdc/blob/master/graphics/bdc.png?raw=true">
