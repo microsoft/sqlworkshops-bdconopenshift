@@ -55,8 +55,7 @@ A Route is defines rules to apply to incoming connections </td></tr>
 
 </table>
 
-Other enhancements to Kubernetes in OpenShift Container Platform include improvements in software defined networking (SDN), authentication, log aggregation, monitoring, and routing. OpenShift Container Platform also offers a comprehensive web console and the custom OpenShift CLI (oc) interface.
-
+Other enhancements to Kubernetes in OpenShift Container Platform include improvements in software defined networking (SDN), authentication, log aggregation, monitoring, and routing. OpenShift Container Platform also offers a comprehensive web console and the custom OpenShift CLI (oc) interface. A more comprehensive discussion on [the differences between Kubernetes and Red Hat OpenShift is here](https://www.educba.com/openshift-vs-kubernetes/). 
 
 <p><img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/point1.png"><b>Activity: Review Primary Concepts</b></p>
 
@@ -82,34 +81,32 @@ SQL Server 2019's Big Data Clusters feature can use the OpenShift platform to de
 The table below illustrates the primary components of SQL Server's Big Data Clusters:
 
 <table style="tr:nth-child(even) {background-color: #f2f2f2;}; text-align: left; display: table; border-collapse: collapse; border-spacing: 5px; border-color: gray;">
-
   <tr><td style="background-color: AliceBlue; color: black;"><b>Component</b></td><td style="background-color: AliceBlue; color: black;"><b>Description</b></td></tr>
 
-  <tr><td><a href="" target="_blank">Controller Service</a></td><td> Description</td></tr>
-  
-  <tr><td style="background-color: AliceBlue; color: black;"><a href="" target="_blank">SQL Server Master Instance </a> </td><td td style="background-color: AliceBlue; color: black;"> Description</td></tr>
+  <tr><td><a href="https://docs.microsoft.com/en-us/sql/big-data-cluster/concept-controller?view=sqlallproducts-allversions" target="_blank">Controller Service</a></td><td> The Controller in the BDC is a service that is deployed with the azdata utility. It bridges the interactions with SQL Server, Kubernetes, Spark and HDFS.</td></tr>
 
-  <tr><td><a href="" target="_blank">Data Pool </a></td><td> Description</td></tr>
-  
-  <tr><td style="background-color: AliceBlue; color: black;"><a href="" target="_blank">Storage Pool </a> </td><td td style="background-color: AliceBlue; color: black;"> Description</td></tr>
+  <tr><td style="background-color: AliceBlue; color: black;"><a href="https://docs.microsoft.com/en-us/sql/big-data-cluster/concept-master-instance?view=sqlallproducts-allversions" target="_blank">SQL Server Master Instance </a> </td><td td style="background-color: AliceBlue; color: black;"> The SQL Server Master Instance is an installation of SQL Server 2019 in a Pod on a Node in the Kubernetes cluster. You access it the same way as any SQL Server Instance, and use it for high-value, OLTP, OLAP or other types of workloads. It has Machine Learning Services already configured, so you have the full range of R, Python, and Java to work with on the data in the Cluster environment.</td></tr>
 
-  <tr><td><a href="" target="_blank">Application Pool </a></td><td> Description</td></tr>
-  
+  <tr><td><a href="https://docs.microsoft.com/en-us/sql/big-data-cluster/concept-data-pool?view=sqlallproducts-allversions" target="_blank">Data Pool </a></td><td> The Data Pool in a BDC consists of one or more SQL Server data pool instances. SQL data pool instances provide persistent SQL Server storage for the cluster. A data pool is used to ingest data from SQL queries or Spark jobs, or other locations. To provide better performance across large data sets, data in a data pool is distributed into shards across the member SQL data pool instances.</td></tr>
+
+  <tr><td style="background-color: AliceBlue; color: black;"><a href="https://docs.microsoft.com/en-us/sql/big-data-cluster/concept-compute-pool?view=sqlallproducts-allversions" target="_blank">Compute Pool </a> </td><td td style="background-color: AliceBlue; color: black;"> The Compute Pool holds one or more SQL Server Pods used for distributed processing under the direction of the SQL Server Master Instance. It makes the calls out to the PolyBase connectors for a distributed Compute layer of the BDC.</td></tr>
+
+  <tr><td><a href="https://docs.microsoft.com/en-us/sql/big-data-cluster/concept-storage-pool?view=sqlallproducts-allversions" target="_blank">Storage Pool </a></td><td> The storage pool consists of storage nodes comprised of SQL Server on Linux, Spark, and HDFS. All the storage nodes in a SQL big data cluster are members of an HDFS cluster. You can use these as a "Data Lake" construct to work with large sets of data stored on disparate data sources. Inside the Storage Pool, the Storage nodes are responsible for data ingestion through Spark, data storage in HDFS (Parquet format). HDFS also provides data persistency, as HDFS data is spread across all the storage nodes in the SQL big data cluster. The Storage Nodes also provide data access through HDFS and SQL Server endpoints.</td></tr>
+
+  <tr><td style="background-color: AliceBlue; color: black;"><a href="https://docs.microsoft.com/en-us/sql/big-data-cluster/concept-application-deployment?view=sqlallproducts-allversions" target="_blank">Application Pool </a> </td><td td style="background-color: AliceBlue; color: black;"> Application deployment enables the deployment of applications on a SQL Server big data cluster by providing interfaces to create, manage, and run applications. </td></tr>
+
+
 </table>
 
 More information on SQL Server Big Data Clusters is at [this reference, part of a larger course dedicated to SQL Server Big Data Clusters Architecture](https://github.com/microsoft/sqlworkshops-bdc/blob/master/SQL2019BDC/02%20-%20SQL%20Server%20BDC%20Components.md). 
 
-<p><img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/point1.png"><b>Activity: TODO: Activity Name</b></p>
+<p><img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/point1.png"><b>Activity: Review Primary Concepts</b></p>
 
-TODO: Activity Description and tasks
-
-<p><img style="margin: 0px 15px 15px 0px;" src="../graphics/checkmark.png"><b>Description</b></p>
-
-TODO: Enter activity description with checkbox
+In this Activity you will review a different description of the SQL Server Big Data Clusters feature. 
 
 <p><img style="margin: 0px 15px 15px 0px;" src="../graphics/checkmark.png"><b>Steps</b></p>
 
-TODO: Enter activity steps description with checkbox
+<a href="https://docs.microsoft.com/en-us/sql/big-data-cluster/big-data-cluster-overview?view=sqlallproducts-allversions" target="_blank"><img style="margin: 0px 15px 15px 0px;" src="../graphics/checkbox.png">Click to open this resource</a>, and read the information you see there.
 
 <p style="border-bottom: 1px solid lightgrey;"></p>
 
@@ -140,40 +137,21 @@ The data flow starts with standard On-Line Transaction Processing (OLTP) data en
 
 <br>
 
-<p><img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/point1.png"><b>Activity: TODO: Activity Name</b></p>
+<p><img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/point1.png"><b>Activity: Deploy a SQL Server Big Data Cluster to Red Hat OpenShift on ARO</b></p>
 
-TODO: Activity Description and tasks
+If you do not have a Red Hat OpenShift platform for this workshop, you can use the Microsoft Azure Red Hat OpenShift environment. 
 
-<p><img style="margin: 0px 15px 15px 0px;" src="../graphics/checkmark.png"><b>Description</b></p>
-
-TODO: Enter activity description with checkbox
+> Note: You will need your Microsoft Azure account and the Red Hat OpenShift on Azure (ARO) environment set up prior to this step, <a href="https://github.com/microsoft/sqlworkshops-bdconopenshift/blob/main/bdconopenshift/00%20-%20Pre-Requisites.md" target="_blank">as described in the pre-requisites for this Workshop</a>.
 
 <p><img style="margin: 0px 15px 15px 0px;" src="../graphics/checkmark.png"><b>Steps</b></p>
 
-TODO: Enter activity steps description with checkbox
+<a href="https://docs.microsoft.com/en-us/sql/big-data-cluster/deploy-openshift?view=sql-server-ver15" target="_blank"><img style="margin: 0px 15px 15px 0px;" src="../graphics/checkbox.png"> Open the following reference and follow all steps you see there</a>. We will return to some of these steps as part of the workshop, so just use the values explained in the documentation.
 
 <p style="border-bottom: 1px solid lightgrey;"></p>
-
-<br> 
-
-<p><img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/point1.png"><b>Deploy a SQL Server Big Data Cluster to Red Hat OpenShift on ARO</b></p>
-
-TODO: Activity Description and tasks
-
-<p><img style="margin: 0px 15px 15px 0px;" src="../graphics/checkmark.png"><b>Description</b></p>
-
-TODO: Enter activity description with checkbox
-
-<p><img style="margin: 0px 15px 15px 0px;" src="../graphics/checkmark.png"><b>Steps</b></p>
-
-- Open [the following reference and follow all steps you see there](https://docs.microsoft.com/en-us/sql/big-data-cluster/deploy-openshift?view=sql-server-ver15). We will return to some of these steps as part of the workshop, so just use the values explained in the documentation.
-
-<p style="border-bottom: 1px solid lightgrey;"></p>
-
 
 <p><img style="margin: 0px 15px 15px 0px;" src="../graphics/owl.png"><b>For Further Study</b></p>
 <ul>
     <li><a href="https://docs.microsoft.com/en-us/azure/openshift/tutorial-create-cluster" target="_blank">A Complete course on setting up an Azure Red Hat OpenShift 4 Cluster is here</a></li>
 </ul>
 
-Congratulations! You have completed this workshop on <TODO: Enter workshop name>. You now have the tools, assets, and processes you need to extrapolate this information into other applications.
+Next, Continue to <a href="https://github.com/microsoft/sqlworkshops-bdconopenshift/blob/main/bdconopenshift/02%20-%20Planning.md" target="_blank"><i> 02 Planning</i></a>.
