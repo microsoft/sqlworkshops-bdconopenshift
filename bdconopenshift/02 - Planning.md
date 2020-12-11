@@ -1,6 +1,6 @@
 ![](../graphics/microsoftlogo.png)
 
-# Workshop: <TODO: Enter workshop name>
+# Workshop: Architecting SQL Server Big Data Cluster Solutions on Red Hat OpenShift
 
 #### <i>A Microsoft workshop from the SQL Server team</i>
 
