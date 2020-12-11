@@ -95,6 +95,8 @@ This is a modular workshop, and in each section, you'll learn concepts, technolo
   
   <tr><td><a href="https://github.com/microsoft/sqlworkshops-bdconopenshift/blob/main/bdconopenshift/04%20-%20Optimization.md" target="_blank">04 - Optimizing </a></td><td> Explains the processes, configuration, and other settings to optimize performance for the solution and the criteria to create the proper environment</td></tr>
 
+  <tr><td><a href="https://github.com/microsoft/sqlworkshops-bdconopenshift/blob/main/bdconopenshift/05%20-%20Open%20Data%20Hub.md" target="_blank">05 - Open Data Hub </a></td><td> Demonstrates the integration between SQL Server Big Data Clusters and the Open Data Hub project</td></tr>
+
 </table>
 
 <p style="border-bottom: 1px solid lightgrey;"></p>

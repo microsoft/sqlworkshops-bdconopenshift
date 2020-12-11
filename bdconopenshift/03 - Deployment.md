@@ -1,12 +1,12 @@
 ![](../graphics/microsoftlogo.png)
 
-# Workshop: <TODO: Enter workshop name>
+# Workshop: Architecting SQL Server Big Data Cluster Solutions on Red Hat OpenShift
 
 #### <i>A Microsoft workshop from the SQL Server team</i>
 
 <p style="border-bottom: 1px solid lightgrey;"></p>
 
-<img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/textbubble.png"> <h2>Security</h2>
+<img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/textbubble.png"> <h2>03 Deployment</h2>
 
 In this workshop you'll cover using <TODO: Enter a brief description of the workshop>. 
 
