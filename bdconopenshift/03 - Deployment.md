@@ -6,70 +6,132 @@
 
 <p style="border-bottom: 1px solid lightgrey;"></p>
 
-<img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/textbubble.png"> <h2>03 Deployment</h2>
+<img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/textbubble.png"> <h2>03 Deployment and Operation</h2>
 
-In this workshop you'll cover using <TODO: Enter a brief description of the workshop>. 
+In this workshop, you'll learn how to plan, implement and operate a SQL Server Big Data Cluster on the Red Hat OpenShift platform. This module covers how to operate your advanced analytics system. 
 
-In each module you'll get more references, which you should follow up on to learn more. Also watch for links within the text - click on each one to explore that topic.
+In each section of this Module you'll get more references, which you should follow up on to learn more. Also watch for links within the text - click on each one to explore that topic.
 
-(<a href="file:///url" target="_blank">Make sure you check out the <b>Pre-Requisites</b> page before you start</a>. You'll need all of the items loaded there before you can proceed with the workshop.)
+<a href="https://github.com/microsoft/sqlworkshops-bdconopenshift/blob/main/bdconopenshift/00%20-%20Pre-Requisites.md" target="_blank">Make sure you check out the <b>Pre-Requisites</b> page before you start</a>. You'll need all of the items loaded there before you can proceed with the workshop.
 
-You'll cover these topics in the workshop:
+You'll cover these topics in this Module:
 <dl>
 
-  <dt><a href="url" target="_blank">01 - <TODO: Enter Module Name<dt>
-  <dt><a href="url" target="_blank">01 - <TODO: Enter Module Name<dt>
-  <dt><a href="url" target="_blank">01 - <TODO: Enter Module Name<dt>
+  <dt><a href="url" target="_blank">3.1 - Implement the proper licensing for the solution<dt>
+  <dt><a href="url" target="_blank">3.2 - Deploy a SQL Server Big Data Cluster to Red Hat OpenShift<dt>
+  <dt><a href="url" target="_blank">3.3 - Leverage the Endpoints and Interfaces for the solution<dt>
+  <dt><a href="url" target="_blank">3.4 - Implement a security strategy for the solution<dt>
+  <dt><a href="url" target="_blank">3.5 - Manage the solution using built-in tools for each component, and comprehensive monitoring with Grafana and Kibana<dt>
 
 </dl>
 
 <p style="border-bottom: 1px solid lightgrey;"></p>
 
-<h2><img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/pencil2.png">1.1 TODO: Topic Name</h2>
-
-TODO: Topic Description
+<h2><img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/pencil2.png">3.1 - Implement the proper licensing for the solution</h2>
 
 <br>
 
-<img style="height: 400; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);" src="https://docs.microsoft.com/en-us/sql/big-data-cluster/media/concept-security/cluster_endpoints.png">
+<TODO: Topic Text>
 
 <br>
 
-<p><img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/point1.png"><b>Activity: TODO: Activity Name</b></p>
+<p><img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/point1.png"><b>Activity: <TODO: Determine Topic Activity</b></p>
 
-TODO: Activity Description and tasks
+In this Activity you will review the installation you performed during the pre-requisites section. If you are taking this Workshop in a group environment, you will review these scripts with the instructor. If you are taking this Workshop on your own, ensure you understand each step in the script and configuration; search for any terms or files you are not familiar with. 
 
-<p><img style="margin: 0px 15px 15px 0px;" src="../graphics/checkmark.png"><b>Description</b></p>
+<p><img style="margin: 0px 15px 15px 0px;" src="../graphics/checkmark.png"><b><TODO: Step Name</b></p>
 
-TODO: Enter activity description with checkbox
-
-<p><img style="margin: 0px 15px 15px 0px;" src="../graphics/checkmark.png"><b>Steps</b></p>
-
-TODO: Enter activity steps description with checkbox
+ - Open the following reference and review the script you see there: [<TODO: Web Link Title>](https://<TODO: Web Link>)
 
 <p style="border-bottom: 1px solid lightgrey;"></p>
 
-<h2><img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/pencil2.png">1.2 TODO: Topic Name</h2>
 
-TODO: Topic Description
+<h2><img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/pencil2.png">3.2 - Deploy a SQL Server Big Data Cluster to Red Hat OpenShift</h2>
 
-<p><img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/point1.png"><b>Activity: TODO: Activity Name</b></p>
+<br>
 
-TODO: Activity Description and tasks
+<TODO: Topic Text>
 
-<p><img style="margin: 0px 15px 15px 0px;" src="../graphics/checkmark.png"><b>Description</b></p>
+<br>
 
-TODO: Enter activity description with checkbox
+<p><img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/point1.png"><b>Activity: <TODO: Determine Topic Activity</b></p>
 
-<p><img style="margin: 0px 15px 15px 0px;" src="../graphics/checkmark.png"><b>Steps</b></p>
+In this Activity you will review the installation you performed during the pre-requisites section. If you are taking this Workshop in a group environment, you will review these scripts with the instructor. If you are taking this Workshop on your own, ensure you understand each step in the script and configuration; search for any terms or files you are not familiar with. 
 
-TODO: Enter activity steps description with checkbox
+<p><img style="margin: 0px 15px 15px 0px;" src="../graphics/checkmark.png"><b><TODO: Step Name</b></p>
+
+ - Open the following reference and review the script you see there: [<TODO: Web Link Title>](https://<TODO: Web Link>)
 
 <p style="border-bottom: 1px solid lightgrey;"></p>
+<h2><img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/pencil2.png">3.3 - Leverage the Endpoints and Interfaces for the solution</h2>
+
+<br>
+
+<TODO: Topic Text>
+
+<br>
+
+<p><img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/point1.png"><b>Activity: <TODO: Determine Topic Activity</b></p>
+
+In this Activity you will review the installation you performed during the pre-requisites section. If you are taking this Workshop in a group environment, you will review these scripts with the instructor. If you are taking this Workshop on your own, ensure you understand each step in the script and configuration; search for any terms or files you are not familiar with. 
+
+<p><img style="margin: 0px 15px 15px 0px;" src="../graphics/checkmark.png"><b><TODO: Step Name</b></p>
+
+ - Open the following reference and review the script you see there: [<TODO: Web Link Title>](https://<TODO: Web Link>)
+
+<p style="border-bottom: 1px solid lightgrey;"></p>
+<h2><img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/pencil2.png">3.4 - Implement a security strategy for the solution</h2>
+
+<br>
+
+<TODO: Topic Text>
+
+<br>
+
+<p><img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/point1.png"><b>Activity: <TODO: Determine Topic Activity</b></p>
+
+In this Activity you will review the installation you performed during the pre-requisites section. If you are taking this Workshop in a group environment, you will review these scripts with the instructor. If you are taking this Workshop on your own, ensure you understand each step in the script and configuration; search for any terms or files you are not familiar with. 
+
+<p><img style="margin: 0px 15px 15px 0px;" src="../graphics/checkmark.png"><b><TODO: Step Name</b></p>
+
+ - Open the following reference and review the script you see there: [<TODO: Web Link Title>](https://<TODO: Web Link>)
+
+<p style="border-bottom: 1px solid lightgrey;"></p>
+<h2><img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/pencil2.png">3.5 - Manage the solution using built-in tools for each component, and comprehensive monitoring with Grafana and Kibana</h2>
+
+<br>
+
+<TODO: Topic Text>
+
+<br>
+
+<p><img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/point1.png"><b>Activity: <TODO: Determine Topic Activity</b></p>
+
+In this Activity you will review the installation you performed during the pre-requisites section. If you are taking this Workshop in a group environment, you will review these scripts with the instructor. If you are taking this Workshop on your own, ensure you understand each step in the script and configuration; search for any terms or files you are not familiar with. 
+
+<p><img style="margin: 0px 15px 15px 0px;" src="../graphics/checkmark.png"><b><TODO: Step Name</b></p>
+
+ - Open the following reference and review the script you see there: [<TODO: Web Link Title>](https://<TODO: Web Link>)
+
+<p style="border-bottom: 1px solid lightgrey;"></p>
+
 
 <p><img style="margin: 0px 15px 15px 0px;" src="../graphics/owl.png"><b>For Further Study</b></p>
 <ul>
-    <li><a href="url" target="_blank">TODO: Enter courses, books, posts, whatever the student needs to extend their study</a></li>
+    <li><a href="url" target="_blank"><TODO: Enter courses, books, posts, whatever the student needs to extend their study></a></li>
 </ul>
 
-Congratulations! You have completed this workshop on <TODO: Enter workshop name>. You now have the tools, assets, and processes you need to extrapolate this information into other applications.
+
+Next, Continue to <a href="https://github.com/microsoft/sqlworkshops-bdconopenshift/blob/main/bdconopenshift/02%20-%20Planning.md" target="_blank"><i> 02 Planning</i></a>.
+
+<pre>
+https://docs.microsoft.com/en-us/sql/big-data-cluster/deploy-openshift?view=sql-server-ver15
+
+https://docs.microsoft.com/en-us/sql/big-data-cluster/quickstart-big-data-cluster-deploy-aro?view=sql-server-ver15#bdc-sccyaml 
+
+https://github.com/microsoft/sqlworkshops-bdconopenshift/tree/main/bdconopenshift 
+
+https://docs.openshift.com/container-platform/4.6/welcome/index.html 
+
+https://microsoft.sharepoint.com/teams/redhatmsshare/Shared%20Documents/Forms/AllItems.aspx?id=%2Fteams%2Fredhatmsshare%2FShared%20Documents%2FEngineering%2FOpenShift%2F4%2E2%2DbetaDocs%2Epdf&parent=%2Fteams%2Fredhatmsshare%2FShared%20Documents%2FEngineering%2FOpenShift
+</pre>

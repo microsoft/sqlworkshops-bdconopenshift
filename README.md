@@ -12,9 +12,9 @@ Welcome to this Microsoft solutions workshop on *Architecting SQL Server Big Dat
 
 This workshop focuses on the **Architect** role (*the person or team tasked with planning, designing and implementing the system*). This course sets the groundwork for the **Operator** role (*those who manage, monitor and secure the system*) and the **Developer** role (*those who create applications and background services for the system*). This course is designed as a "Delta" course explaining the differences of planning, installing and operating a SQL Server Big Data Cluster on a Red Hat OpenShift cluster. 
 
-> **NOTE:** You should be familiar with Linux, Containers, Kubernetes, Red Hat OpenShift, and SQL Server Big Data Clusters prior to taking this course. Resources are provided inthe Pre-Requisites Module if you are new to these technologies. 
+> **NOTE:** You should be familiar with Linux, Containers, Kubernetes, Red Hat OpenShift, and SQL Server Big Data Clusters prior to taking this course. Resources are provided in the Pre-Requisites Module if you are new to these technologies. 
 
-You'll start with a quick review of your understanding of Virtualization and the Kubernetes Orchestration system, and how SQL Server Big Data Clusters is implemented on this environment. You'll also review the key concepts of the Red Hat OpenShift platform. This rest of the course focuses on learning now the SQL Server Big Data Cluster system works on the Red Hat OpenShift Platform, whether on-premises on in a Cloud environment.
+You'll start with a quick review of your understanding of Virtualization and the Kubernetes Orchestration system, and how SQL Server Big Data Clusters is implemented on this environment. You'll also review the key concepts of the Red Hat OpenShift platform. This rest of the course focuses on learning now the SQL Server Big Data Cluster system works on the Red Hat OpenShift Platform, whether on-premises on in a Cloud environment. You'll also learn how to integrate SQL Server Big Data Clusters on Red Hat Openshift with the [Open Data Hub project](https://opendatahub.io/). 
 
 This [github README.MD file](https://lab.github.com/githubtraining/introduction-to-github) explains how the workshop is laid out, what you will learn, and the technologies you will use in this solution. To download this Lab to your local computer, click the **Clone or Download** button you see at the top right side of this page. [More about that process is here](https://help.github.com/en/github/creating-cloning-and-archiving-repositories/cloning-a-repository). 
 
@@ -61,8 +61,8 @@ This workshop uses Red Hat OpenShift and SQL Server Big Data Clusters, with a fo
 
 <table style="tr:nth-child(even) {background-color: #f2f2f2;}; text-align: left; display: table; border-collapse: collapse; border-spacing: 5px; border-color: gray;">
 
-  <tr><td style="background-color: Cornsilk; color: black; padding: 5px 5px;">Primary Audience:</td><td style="background-color: Cornsilk; color: black; padding: 5px 5px;">IT Professionals tasked with creating secure advanaced analytics environments </td></tr>
-  <tr><td>Secondary Audience:</td><td>Data  Technology Professionals</td></tr>
+  <tr><td style="background-color: Cornsilk; color: black; padding: 5px 5px;">Primary Audience:</td><td style="background-color: Cornsilk; color: black; padding: 5px 5px;">IT Professionals tasked with creating secure advanced analytics environments </td></tr>
+  <tr><td>Secondary Audience:</td><td>Data Technology Professionals</td></tr>
   <tr><td style="background-color: Cornsilk; color: black; padding: 5px 5px;">Level: </td><td style="background-color: Cornsilk; color: black; padding: 5px 5px0;">300</td></tr>
   <tr><td>Type:</td><td>In-Person, On-Line, or from github</td></tr>
   <tr><td style="background-color: Cornsilk; color: black; padding: 5px 5px;">Length: </td><td style="background-color: Cornsilk; color: black; padding: 5px 5px;">TODO: Number of hours</td></tr>
