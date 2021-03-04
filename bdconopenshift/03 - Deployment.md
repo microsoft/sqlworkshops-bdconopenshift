@@ -134,4 +134,11 @@ https://github.com/microsoft/sqlworkshops-bdconopenshift/tree/main/bdconopenshif
 https://docs.openshift.com/container-platform/4.6/welcome/index.html 
 
 https://microsoft.sharepoint.com/teams/redhatmsshare/Shared%20Documents/Forms/AllItems.aspx?id=%2Fteams%2Fredhatmsshare%2FShared%20Documents%2FEngineering%2FOpenShift%2F4%2E2%2DbetaDocs%2Epdf&parent=%2Fteams%2Fredhatmsshare%2FShared%20Documents%2FEngineering%2FOpenShift
+
+https://docs.microsoft.com/en-us/sql/big-data-cluster/deploy-openshift?view=sql-server-ver15
+
+https://docs.microsoft.com/en-us/sql/big-data-cluster/quickstart-big-data-cluster-deploy-aro?view=sql-server-ver15#bdc-sccyaml 
+
+https://github.com/microsoft/sqlworkshops-bdconopenshift/tree/main/bdconopenshift 
+
 </pre>
