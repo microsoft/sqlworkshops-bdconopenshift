@@ -8,22 +8,11 @@
 
 <img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/textbubble.png"> <h2>03 Deployment and Operation</h2>
 
-In this workshop, you'll learn how to plan, implement and operate a SQL Server Big Data Cluster on the Red Hat OpenShift platform. This module covers how to operate your advanced analytics system. 
+In this workshop, you'll learn how to plan, implement and operate a SQL Server Big Data Cluster on the Red Hat OpenShift platform. This module covers how to install your Big Data Cluster. 
 
 In each section of this Module you'll get more references, which you should follow up on to learn more. Also watch for links within the text - click on each one to explore that topic.
 
 <a href="https://github.com/microsoft/sqlworkshops-bdconopenshift/blob/main/bdconopenshift/00%20-%20Pre-Requisites.md" target="_blank">Make sure you check out the <b>Pre-Requisites</b> page before you start</a>. You'll need all of the items loaded there before you can proceed with the workshop.
-
-You'll cover these topics in this Module:
-<dl>
-
-  <dt><a href="url" target="_blank">3.1 - Implement the proper licensing for the solution<dt>
-  <dt><a href="url" target="_blank">3.2 - Deploy a SQL Server Big Data Cluster to Red Hat OpenShift<dt>
-  <dt><a href="url" target="_blank">3.3 - Leverage the Endpoints and Interfaces for the solution<dt>
-  <dt><a href="url" target="_blank">3.4 - Implement a security strategy for the solution<dt>
-  <dt><a href="url" target="_blank">3.5 - Manage the solution using built-in tools for each component, and comprehensive monitoring with Grafana and Kibana<dt>
-
-</dl>
 
 <p style="border-bottom: 1px solid lightgrey;"></p>
 
@@ -31,17 +20,19 @@ You'll cover these topics in this Module:
 
 <br>
 
-<TODO: Topic Text>
+There are two licensing models you need to consider for your solution. The first is for the Red Hat OpenShift platform you choose. In general, on-premises installation licensing follows whatever you have set up with your Red Hat corporate relationship. You can find [more general licensing information here](https://www.openshift.com/products/pricing/).
 
+Deploying to a Cloud environment is usually more simplistic for licensing. In general, you will use a "pay as you go" model, where you pay by the capacity you use, and not break out the licensing costs separately. In this course you will deploy a sample solution on Microsoft Azure Red Hat OpenShift, [and the pricing for that platform is located here.](https://azure.microsoft.com/en-us/pricing/details/openshift/) 
 <br>
 
-<p><img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/point1.png"><b>Activity: <TODO: Determine Topic Activity</b></p>
+<p><img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/point1.png"><b>Activity: Learn the Specifics of Licensing SQL Server Big Data Clusters</b></p>
 
-In this Activity you will review the installation you performed during the pre-requisites section. If you are taking this Workshop in a group environment, you will review these scripts with the instructor. If you are taking this Workshop on your own, ensure you understand each step in the script and configuration; search for any terms or files you are not familiar with. 
+In this Activity you will review the licensing for SQL Server Big Data Cluster, and next you will perform the Installation on the Microsoft Azure OpenShift (ARO) platform. If you are taking this Workshop in a group environment, you will review these scripts with the instructor. If you are taking this Workshop on your own, ensure you understand each step in the script and configuration; search for any terms or files you are not familiar with. 
 
-<p><img style="margin: 0px 15px 15px 0px;" src="../graphics/checkmark.png"><b><TODO: Step Name</b></p>
+<p><img style="margin: 0px 15px 15px 0px;" src="../graphics/checkmark.png"><b>Review Licensing Aspects</b></p>
 
- - Open the following reference and review the script you see there: [<TODO: Web Link Title>](https://<TODO: Web Link>)
+ - [Open the following reference and review the information you see there on Big Data Clusters licensing.](https://techcommunity.microsoft.com/t5/sql-server/optimize-tco-with-new-sql-server-software-assurance-benefits-for/ba-p/1123731?WT.mc_id=dataexposed-c9-niner)
+ - [Open the following reference and watch the video you see there for licensing your solution.](https://channel9.msdn.com/Shows/Data-Exposed/SQL-Server-Licensing-Big-Data-Clusters--Data-Exposed)
 
 <p style="border-bottom: 1px solid lightgrey;"></p>
 

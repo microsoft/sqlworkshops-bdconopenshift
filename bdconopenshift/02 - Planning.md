@@ -191,13 +191,11 @@ There are also security considerations for running SQL Server Big Data Clusters 
 
 <p><img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/point1.png"><b>Activity: Review Configuration File</b></p>
 
-In this Activity you will review the installation you performed during the pre-requisites section. If you are taking this Workshop in a group environment, you will review these scripts with the instructor. If you are taking this Workshop on your own, ensure you understand each step in the script and configuration; search for any terms or files you are not familiar with. 
+In this Activity you will review the pre-requisites you need to install the Big Data Cluster system on Red Hat OpenShift. If you are taking this Workshop in a group environment, you will review these scripts with the instructor. If you are taking this Workshop on your own, ensure you understand each step in the script and configuration; search for any terms or files you are not familiar with. 
 
 <p><img style="margin: 0px 15px 15px 0px;" src="../graphics/checkmark.png"><b>Dumping the Configuration File</b></p>
 
- - Open the following [reference and review the information and video you see there.](https://docs.microsoft.com/en-us/sql/big-data-cluster/deployment-custom-configuration?view=sql-server-ver15)
- - Using the `azdata` tool, dump the current configuration for review.
- - What components have the highest memory requirements? Storage? Networking? CPU? 
+ - Open the following [reference and review the information and video you see there.](https://docs.microsoft.com/en-us/sql/big-data-cluster/deploy-big-data-tools?view=sql-server-ver15)
 
 <p style="border-bottom: 1px solid lightgrey;"></p>
 
