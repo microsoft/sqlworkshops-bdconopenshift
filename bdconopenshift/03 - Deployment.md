@@ -41,17 +41,19 @@ In this Activity you will review the licensing for SQL Server Big Data Cluster, 
 
 <br>
 
-<TODO: Topic Text>
+With the preparation so far, you're ready to start the deployment you have designed. Keep in mind that for this course you are using the Microsoft Azure Red Hat OpenShift (ARO) environment, and so other designs will have different deployment options. 
+
+[Full instructions for all types of Red Hat OpenShift deployments are located here.](https://docs.microsoft.com/en-us/sql/big-data-cluster/deploy-openshift?view=sql-server-ver15) For the next activity, you will use the pre-requisites you installed to deploy your cluster. Total deployment time is around 30 minutes.  
 
 <br>
 
-<p><img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/point1.png"><b>Activity: <TODO: Determine Topic Activity</b></p>
+<p><img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/point1.png"><b>Activity: Deploy a SQL Server Big Data Cluster on Azure Red Hat OpenShift (ARO)</b></p>
 
-In this Activity you will review the installation you performed during the pre-requisites section. If you are taking this Workshop in a group environment, you will review these scripts with the instructor. If you are taking this Workshop on your own, ensure you understand each step in the script and configuration; search for any terms or files you are not familiar with. 
+If you are taking this Workshop in a group environment, you will review this process with the instructor. If you are taking this Workshop on your own, ensure you understand each step in theinstallation and configuration; search for any terms or files you are not familiar with. 
 
-<p><img style="margin: 0px 15px 15px 0px;" src="../graphics/checkmark.png"><b><TODO: Step Name</b></p>
+<p><img style="margin: 0px 15px 15px 0px;" src="../graphics/checkmark.png"><b>Deployment</b></p>
 
- - Open the following reference and review the script you see there: [<TODO: Web Link Title>](https://<TODO: Web Link>)
+ - [Open the following reference and follow the steps you see there](https://docs.microsoft.com/en-us/sql/big-data-cluster/quickstart-big-data-cluster-deploy-aro?view=sql-server-ver15#prerequisites)
 
 <p style="border-bottom: 1px solid lightgrey;"></p>
 <h2><img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/pencil2.png">3.3 - Leverage the Endpoints and Interfaces for the solution</h2>
@@ -68,7 +70,7 @@ In this Activity you will review the installation you performed during the pre-r
 
 <p><img style="margin: 0px 15px 15px 0px;" src="../graphics/checkmark.png"><b><TODO: Step Name</b></p>
 
- - Open the following reference and review the script you see there: [<TODO: Web Link Title>](https://<TODO: Web Link>)
+ - Open the following reference and review the script you see there: [<TODO: Web Link Title>](https://docs.microsoft.com/en-us/sql/big-data-cluster/connect-to-big-data-cluster?view=sql-server-ver15)
 
 <p style="border-bottom: 1px solid lightgrey;"></p>
 <h2><img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/pencil2.png">3.4 - Implement a security strategy for the solution</h2>
@@ -85,7 +87,7 @@ In this Activity you will review the installation you performed during the pre-r
 
 <p><img style="margin: 0px 15px 15px 0px;" src="../graphics/checkmark.png"><b><TODO: Step Name</b></p>
 
- - Open the following reference and review the script you see there: [<TODO: Web Link Title>](https://<TODO: Web Link>)
+ - Open the following reference and review the script you see there: [<TODO: Web Link Title>](https://docs.microsoft.com/en-us/sql/big-data-cluster/non-root-containers?view=sql-server-ver15)
 
 <p style="border-bottom: 1px solid lightgrey;"></p>
 <h2><img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/pencil2.png">3.5 - Manage the solution using built-in tools for each component, and comprehensive monitoring with Grafana and Kibana</h2>
@@ -102,7 +104,7 @@ In this Activity you will review the installation you performed during the pre-r
 
 <p><img style="margin: 0px 15px 15px 0px;" src="../graphics/checkmark.png"><b><TODO: Step Name</b></p>
 
- - Open the following reference and review the script you see there: [<TODO: Web Link Title>](https://<TODO: Web Link>)
+ - Open the following reference and review the script you see there: [<TODO: Web Link Title>](https://docs.microsoft.com/en-us/sql/big-data-cluster/manage-with-controller-dashboard?view=sql-server-ver15)
 
 <p style="border-bottom: 1px solid lightgrey;"></p>
 
@@ -116,9 +118,7 @@ In this Activity you will review the installation you performed during the pre-r
 Next, Continue to <a href="https://github.com/microsoft/sqlworkshops-bdconopenshift/blob/main/bdconopenshift/02%20-%20Planning.md" target="_blank"><i> 02 Planning</i></a>.
 
 <pre>
-https://docs.microsoft.com/en-us/sql/big-data-cluster/deploy-openshift?view=sql-server-ver15
 
-https://docs.microsoft.com/en-us/sql/big-data-cluster/quickstart-big-data-cluster-deploy-aro?view=sql-server-ver15#bdc-sccyaml 
 
 https://github.com/microsoft/sqlworkshops-bdconopenshift/tree/main/bdconopenshift 
 
