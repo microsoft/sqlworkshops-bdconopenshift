@@ -58,19 +58,41 @@ If you are taking this Workshop in a group environment, you will review this pro
 <p style="border-bottom: 1px solid lightgrey;"></p>
 <h2><img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/pencil2.png">3.3 - Leverage the Endpoints and Interfaces for the solution</h2>
 
-<br>
-
-<TODO: Topic Text>
+Now that you have installed your cluster, you can connect to the *endpoints* it provides. You can list these endpoints in the Azure Data Studio tool:
 
 <br>
+<img src="https://docs.microsoft.com/en-us/sql/big-data-cluster/media/manage-with-controller-dashboard/controller-dashboard.png?view=sql-server-ver15">
+<br>
 
-<p><img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/point1.png"><b>Activity: <TODO: Determine Topic Activity</b></p>
+You can also list the endpoints using the `azdata` command. Here is an example deployment and the values returned from the following command:
 
-In this Activity you will review the installation you performed during the pre-requisites section. If you are taking this Workshop in a group environment, you will review these scripts with the instructor. If you are taking this Workshop on your own, ensure you understand each step in the script and configuration; search for any terms or files you are not familiar with. 
+`azdata bdc endpoint list`
 
-<p><img style="margin: 0px 15px 15px 0px;" src="../graphics/checkmark.png"><b><TODO: Step Name</b></p>
+<Table>
+    <tr><th>Endpoint Purpose</th><th>Example IP and Port</th></tr>
+    <tr><td>SQL Server Master Instance Front-End</td><td>10.1.1.1,31433</td></tr>
+    <tr><td>Cluster Management Service</td><td>https://10.1.1.2:30080</td></tr>
+    <tr><td>Management Proxy</td><td>https://10.1.1.3:30777</td></tr>
+    <tr><td>Metrics Dashboard</td><td>https://10.1.1.3:30777/grafana/d/xxxxx</td></tr>
+    <tr><td>Log Search Dashboard</td><td>https://10.1.1.3:30777/kibana/app/kibana#/discover</td></tr>
+    <tr><td>Gateway to access HDFS files, Spark</td><td>https://10.1.1.4:30443</td></tr>
+    <tr><td>Proxy for running Spark statements, jobs, applications</td><td>https://10.1.1.5:30443/gateway/default/livy/v1</td></tr>
+    <tr><td>Spark Jobs Management and Monitoring Dashboard</td><td>https://10.1.1.5:30443/gateway/default/sparkhistory</td></tr>
+    <tr><td>HDFS File System Proxy</td><td>https://10.1.1.5:30443/gateway/default/webhdfs/v1</td></tr>
+    <tr><td>Spark Diagnostics and Monitoring Dashboard</td><td>https://10.1.1.5:30443/gateway/default/yarn</td></tr>
+    <tr><td>Application Proxy</td><td>https://10.1.1.6:30778</td></tr>
+</table>
 
- - Open the following reference and review the script you see there: [<TODO: Web Link Title>](https://docs.microsoft.com/en-us/sql/big-data-cluster/connect-to-big-data-cluster?view=sql-server-ver15)
+<br>
+
+<p><img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/point1.png"><b>Activity: Connect to your Big Data Cluster deployment</b></p>
+
+In this Activity you will connect to the cluster you deployed. You'll use two methods, the Azure Data Studio and the `azdata` command. 
+
+<p><img style="margin: 0px 15px 15px 0px;" src="../graphics/checkmark.png">Connect to your BDC using Azure Data Studio and azdata</b></p>
+
+ - [Open the following reference and follow the instructions you see there to connect to your BDC using Azure Data Studio](https://docs.microsoft.com/en-us/sql/big-data-cluster/connect-to-big-data-cluster?view=sql-server-ver15)
+ - [Open the following reference and follow the instructions you see there to connect to your BDC using azdata to see the status](https://docs.microsoft.com/en-us/sql/azdata/reference/reference-azdata-bdc-status?view=sql-server-ver15)
 
 <p style="border-bottom: 1px solid lightgrey;"></p>
 <h2><img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/pencil2.png">3.4 - Implement a security strategy for the solution</h2>
@@ -115,10 +137,10 @@ In this Activity you will review the installation you performed during the pre-r
 </ul>
 
 
-Next, Continue to <a href="https://github.com/microsoft/sqlworkshops-bdconopenshift/blob/main/bdconopenshift/02%20-%20Planning.md" target="_blank"><i> 02 Planning</i></a>.
+Next, Continue to <a href="https://github.com/microsoft/sqlworkshops-bdconopenshift/blob/main/bdconopenshift/04%20-%20Optimization.md" target="_blank"><i> 04 Optimization</i></a>.
 
 <pre>
-
+https://dzone.com/articles/top-kubernetes-health-metrics-you-must-monitor 
 
 https://github.com/microsoft/sqlworkshops-bdconopenshift/tree/main/bdconopenshift 
 
