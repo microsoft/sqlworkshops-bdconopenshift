@@ -99,24 +99,34 @@ In this Activity you will connect to the cluster you deployed. You'll use two me
 
 <br>
 
-<TODO: Topic Text>
+Installing SQL Server Big Data Clusters on Red Hat OpenShift comes with additional security considerations, defined in the custom security context constraint (SCC). You can find the comnplete SCC here, and you will review that in the Activities below. The custom SCC for BDC is based on the built-in nonroot SCC in OpenShift, with additional permissions. 
+
+> NOTE: SQL Server 2019 CU5 introduces support for non-root containers. The platform implementation is safer by ensuring that all container applications running within BDC are started as non-root users by default, on all supported platforms. These capabilities are available for all new deployments using the SQL Server 2019 CU5 corresponding image tag. If you are taking this workshop, you will deploy CU5 or higher. 
+
+For a complete review of security aspects of BDC on OpenShift you will review two resources - if you are in-class, you will work through these with the instructor, if you are taking this workshop on your own, follow through the resources indicated below. 
 
 <br>
 
-<p><img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/point1.png"><b>Activity: <TODO: Determine Topic Activity</b></p>
+<p><img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/point1.png"><b>Activity: Review SCC and Security Documentation</b></p>
 
 In this Activity you will review the installation you performed during the pre-requisites section. If you are taking this Workshop in a group environment, you will review these scripts with the instructor. If you are taking this Workshop on your own, ensure you understand each step in the script and configuration; search for any terms or files you are not familiar with. 
 
-<p><img style="margin: 0px 15px 15px 0px;" src="../graphics/checkmark.png"><b><TODO: Step Name</b></p>
-
- - Open the following reference and review the script you see there: [<TODO: Web Link Title>](https://docs.microsoft.com/en-us/sql/big-data-cluster/non-root-containers?view=sql-server-ver15)
+ - [Open the following reference and review the information you see there.](https://docs.microsoft.com/en-us/sql/big-data-cluster/non-root-containers?view=sql-server-ver15)
+ - [Open the following reference and review the Red Hat OpenShift security documentation you see there.](https://docs.openshift.com/container-platform/4.3/authentication/managing-security-context-constraints.html)
+ - [Open the following reference and review the security white-paper you see there.](https://aka.ms/sql-bdc-openshift-security)
+ - [Open the following reference and review the SCC depolyment variables you see there.](https://docs.microsoft.com/en-us/sql/big-data-cluster/deploy-openshift?view=sql-server-ver15#bdc-sccyaml-file)
 
 <p style="border-bottom: 1px solid lightgrey;"></p>
-<h2><img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/pencil2.png">3.5 - Manage the solution using built-in tools for each component, and comprehensive monitoring with Grafana and Kibana</h2>
+<h2><img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/pencil2.png">3.5 - Manage the solution using built-in tools for each component</h2>
 
 <br>
 
-<TODO: Topic Text>
+There are a few primary tools you will use to manage your deployment:
+
+- oc - Manage Red Hat OpenShift cluster utility (Command Line) [(Reference)](https://docs.openshift.com/container-platform/4.7/cli_reference/openshift_cli/getting-started-cli.html)
+- Red Hat OpenShift Container Platform Dashboard (Graphical Interface) [(Reference)](https://docs.openshift.com/container-platform/4.7/web_console/using-dashboard-to-get-cluster-information.html)
+- azdata - SQL Server Big Data Clusters utility (Command Line) [(Reference)](https://docs.microsoft.com/en-us/sql/azdata/reference/reference-azdata?view=sql-server-ver15)
+- Azure Data Studio - Coding, monitoring and management of the SQL Server and Spark environments (Graphical Interface) [(Reference)](https://docs.microsoft.com/en-us/sql/big-data-cluster/manage-with-controller-dashboard?view=sql-server-ver15)
 
 <br>
 
@@ -140,6 +150,8 @@ In this Activity you will review the installation you performed during the pre-r
 Next, Continue to <a href="https://github.com/microsoft/sqlworkshops-bdconopenshift/blob/main/bdconopenshift/04%20-%20Optimization.md" target="_blank"><i> 04 Optimization</i></a>.
 
 <pre>
+https://docs.microsoft.com/en-us/sql/big-data-cluster/view-cluster-status?view=sql-server-ver15#manage-and-operate-with-tools
+
 https://dzone.com/articles/top-kubernetes-health-metrics-you-must-monitor 
 
 https://github.com/microsoft/sqlworkshops-bdconopenshift/tree/main/bdconopenshift 
