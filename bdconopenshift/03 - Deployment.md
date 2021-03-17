@@ -130,40 +130,27 @@ There are a few primary tools you will use to manage your deployment:
 
 <br>
 
-<p><img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/point1.png"><b>Activity: <TODO: Determine Topic Activity</b></p>
+<p><img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/point1.png"><b>Activity: Use various utilities and tools to connect to your Big Data Cluster</b></p>
 
 In this Activity you will review the installation you performed during the pre-requisites section. If you are taking this Workshop in a group environment, you will review these scripts with the instructor. If you are taking this Workshop on your own, ensure you understand each step in the script and configuration; search for any terms or files you are not familiar with. 
 
 <p><img style="margin: 0px 15px 15px 0px;" src="../graphics/checkmark.png"><b><TODO: Step Name</b></p>
 
- - Open the following reference and review the script you see there: [<TODO: Web Link Title>](https://docs.microsoft.com/en-us/sql/big-data-cluster/manage-with-controller-dashboard?view=sql-server-ver15)
+ - Using the `oc` utility, get the description and status of your Big Data Cluster OpenShift environment. What pods are listed?
+ - Using the `azdata` utility, list the IP address and ports for your Big Data Cluster. 
+ - Using the `Azure Data Studio` tool, connect to your SQL Server Instance in your Big Data Cluster and get the release number for the Instance. 
+ - Using the `OpenShift Container Platform Dashboard` tool, show the Persistent Volumes on your cluster.
 
 <p style="border-bottom: 1px solid lightgrey;"></p>
 
-
 <p><img style="margin: 0px 15px 15px 0px;" src="../graphics/owl.png"><b>For Further Study</b></p>
 <ul>
-    <li><a href="url" target="_blank"><TODO: Enter courses, books, posts, whatever the student needs to extend their study></a></li>
+    <li>https://docs.microsoft.com/en-us/sql/big-data-cluster/view-cluster-status?view=sql-server-ver15#manage-and-operate-with-tools</li>
+    <li>https://dzone.com/articles/top-kubernetes-health-metrics-you-must-monitor</li> 
+    <li>https://docs.openshift.com/container-platform/4.6/welcome/index.html</li> 
+    <li>https://docs.microsoft.com/en-us/sql/big-data-cluster/deploy-openshift?view=sql-server-ver1</li>
+    <li>https://docs.microsoft.com/en-us/sql/big-data-cluster/quickstart-big-data-cluster-deploy-aro?view=sql-server-ver15#bdc-sccyaml</li> 
 </ul>
 
 
 Next, Continue to <a href="https://github.com/microsoft/sqlworkshops-bdconopenshift/blob/main/bdconopenshift/04%20-%20Optimization.md" target="_blank"><i> 04 Optimization</i></a>.
-
-<pre>
-https://docs.microsoft.com/en-us/sql/big-data-cluster/view-cluster-status?view=sql-server-ver15#manage-and-operate-with-tools
-
-https://dzone.com/articles/top-kubernetes-health-metrics-you-must-monitor 
-
-https://github.com/microsoft/sqlworkshops-bdconopenshift/tree/main/bdconopenshift 
-
-https://docs.openshift.com/container-platform/4.6/welcome/index.html 
-
-https://microsoft.sharepoint.com/teams/redhatmsshare/Shared%20Documents/Forms/AllItems.aspx?id=%2Fteams%2Fredhatmsshare%2FShared%20Documents%2FEngineering%2FOpenShift%2F4%2E2%2DbetaDocs%2Epdf&parent=%2Fteams%2Fredhatmsshare%2FShared%20Documents%2FEngineering%2FOpenShift
-
-https://docs.microsoft.com/en-us/sql/big-data-cluster/deploy-openshift?view=sql-server-ver15
-
-https://docs.microsoft.com/en-us/sql/big-data-cluster/quickstart-big-data-cluster-deploy-aro?view=sql-server-ver15#bdc-sccyaml 
-
-https://github.com/microsoft/sqlworkshops-bdconopenshift/tree/main/bdconopenshift 
-
-</pre>

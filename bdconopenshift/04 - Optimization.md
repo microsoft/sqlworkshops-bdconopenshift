@@ -14,17 +14,6 @@ In each section of this Module you'll get more references, which you should foll
 
 <a href="https://github.com/microsoft/sqlworkshops-bdconopenshift/blob/main/bdconopenshift/00%20-%20Pre-Requisites.md" target="_blank">Make sure you check out the <b>Pre-Requisites</b> page before you start</a>. You'll need all of the items loaded there before you can proceed with the workshop.
 
-You'll cover these topics in this Module:
-<dl>
-
-  <dt><a href="url" target="_blank">01 - <TODO: Enter Module Name<dt>
-  <dt><a href="url" target="_blank">01 - <TODO: Enter Module Name<dt>
-  <dt><a href="url" target="_blank">01 - <TODO: Enter Module Name<dt>
-
-</dl>
-
-  - Optimize the Red Hat OpenShift environment for the solution
-
 <p style="border-bottom: 1px solid lightgrey;"></p>
 
 <h2><img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/pencil2.png">4.1 - <TODO: Flesh out Sections></h2>
@@ -48,14 +37,8 @@ In this Activity you will review the installation you performed during the pre-r
 
 <p><img style="margin: 0px 15px 15px 0px;" src="../graphics/owl.png"><b>For Further Study</b></p>
 <ul>
-    <li><a href="url" target="_blank"><TODO: Enter courses, books, posts, whatever the student needs to extend their study></a></li>
+    <li><a href="https://docs.microsoft.com/en-us/sql/big-data-cluster/performance-guidelines-tuned?view=sql-server-ver15" target="_blank">Performance Tuning Guide</a></li>
 </ul>
 
 
-Next, Continue to <a href="https://github.com/microsoft/sqlworkshops-bdconopenshift/blob/main/bdconopenshift/02%20-%20Planning.md" target="_blank"><i> 02 Planning</i></a>.
-
-<pre>
-
-https://docs.microsoft.com/en-us/sql/big-data-cluster/performance-guidelines-tuned?view=sql-server-ver15
-
-</pre>
+Next, Continue to <a href="https://github.com/microsoft/sqlworkshops-bdconopenshift/blob/main/bdconopenshift/05%20-%20Open%20Data%20Hub.md" target="_blank"><i> 05 Open Data Hub</i></a>.
