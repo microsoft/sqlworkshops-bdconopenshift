@@ -36,14 +36,13 @@ In this Activity you will review the licensing for SQL Server Big Data Cluster, 
 
 <p style="border-bottom: 1px solid lightgrey;"></p>
 
-
 <h2><img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/pencil2.png">3.2 - Deploy a SQL Server Big Data Cluster to Red Hat OpenShift</h2>
 
 <br>
 
 With the preparation so far, you're ready to start the deployment you have designed. Keep in mind that for this course you are using the Microsoft Azure Red Hat OpenShift (ARO) environment, and so other designs will have different deployment options. 
 
-[Full instructions for all types of Red Hat OpenShift deployments are located here.](https://docs.microsoft.com/en-us/sql/big-data-cluster/deploy-openshift?view=sql-server-ver15) For the next activity, you will use the pre-requisites you installed to deploy your cluster. Total deployment time is around 30 minutes.  
+[Full instructions for all types of Red Hat OpenShift deployments are located here.](https://docs.microsoft.com/en-us/sql/big-data-cluster/deploy-openshift?view=sql-server-ver15) For the next activity, you will use the pre-requisites you installed to deploy your cluster. Total deployment time is around 30-45 minutes.  
 
 <br>
 
@@ -151,6 +150,5 @@ In this Activity you will review the installation you performed during the pre-r
     <li>https://docs.microsoft.com/en-us/sql/big-data-cluster/deploy-openshift?view=sql-server-ver1</li>
     <li>https://docs.microsoft.com/en-us/sql/big-data-cluster/quickstart-big-data-cluster-deploy-aro?view=sql-server-ver15#bdc-sccyaml</li> 
 </ul>
-
 
 Next, Continue to <a href="https://github.com/microsoft/sqlworkshops-bdconopenshift/blob/main/bdconopenshift/04%20-%20Optimization.md" target="_blank"><i> 04 Optimization</i></a>.
