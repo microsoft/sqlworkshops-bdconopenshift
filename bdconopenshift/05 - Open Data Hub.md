@@ -20,7 +20,9 @@ In each section of this Module you'll get more references, which you should foll
 
 <br>
 
-One possible use of analytics is an end-to-end example of Fraud Detection and Scoring using [Red Hat OpenShift](https://www.openshift.com/), [SQL Server Big Data Clusters](https://docs.microsoft.com/en-us/sql/big-data-cluster/big-data-cluster-overview?view=sql-server-ver15#:~:text=Kubernetes%20concepts%20%20%20%20Term%20%20,the%20atomic%20deployment%20unit%20of%20K%20...%20), and the [Open Data Hub project](https://opendatahub.io/). Our datasets involve a sample financial system database, and [sample Credit Card transations from this location](https://www.kaggle.com/isaikumar/creditcardfraud).
+One possible use of analytics is an end-to-end example of Fraud Detection and Scoring using [Red Hat OpenShift](https://www.openshift.com/), [SQL Server Big Data Clusters](https://docs.microsoft.com/en-us/sql/big-data-cluster/big-data-cluster-overview?view=sql-server-ver15#:~:text=Kubernetes%20concepts%20%20%20%20Term%20%20,the%20atomic%20deployment%20unit%20of%20K%20...%20), and the [Open Data Hub project](https://opendatahub.io/). Our datasets involve a sample financial system database, and [sample Credit Card transations from this location](https://www.kaggle.com/isaikumar/creditcardfraud). For instance, a financial institution may wish to perform Extract, Load and Transform (ELT) and model testing and creation locally in a secure environment they control. But they want to "enrich" that process with outside interests, such as remote workers or perhaps even an entirely different organization. 
+
+In this scenario, You can incorporate [Red Hat Open Data Hub](https://opendatahub.io/) for a complete solution. Open Data Hub is a blueprint for building an AI as a service platform on Red Hat's Kubernetes-based OpenShift® Container Platform and Ceph Object Storage. It inherits from upstream efforts such as Kafka/Strimzi and Kubeflow, and is the foundation for Red Hat's internal data science and AI platform. Data scientists can create models using Jupyter notebooks, and select from popular tools such as TensorFlow™, scikit-learn, Apache Spark™ and more for developing models. Teams can spend more time solving critical business needs and less on installing and maintaining infrastructure with the Open Data Hub.
 
 This is the diagram of that potential architecure, and the data progression is described below:
 
@@ -30,45 +32,30 @@ This is the diagram of that potential architecure, and the data progression is d
 
 <br>
 
-The data flow starts with standard On-Line Transaction Processing (OLTP) data entered into the database, and then Credit Card Transactions streamed from multiple commercial locations to a binary-store in a cloud provider. From there, the data is processed theough the system:
-
-1. The IT Department sets up a Red Hat OpenShift cluster (on-prem or in-cloud)
-2. The IT Department installs a SQL Server Big Data Cluster on the OpenShift environment, and communicates the endpoints and security to the appropriate developers and engineers
-3. The Data Engineering team creates an Extract-Transform and Load (ETL) process using Spark code in a Jupyter Notebook to ingest data from the cloud binary store into the Storage Pool HDFS location
-4. The Database Administration team uses PolyBase in SQL Server to create an External Table which allows access to the HDFS data, joining it with OLTP Database Tables to create a query and reporting feature for Line-Of-Business users
-5. The Data Science Team uses multiple data sets to [experiment, train, and persist a Fraud Detection model](https://www.kaggle.com/jayeshbali/credit-card-fraud-detection) using a PySpark Notebook in the Storage Pool, and deploying the resulting model to the App Pool
-6. The model is converted to an intermediate format using ONNX
-7. The model is converted from ONNX to Tensorflow to be ingested to the Open Data Hub environment for addition scoring targets and for further analysis, combining further data sets for more permutations  
+The data flow starts with standard On-Line Transaction Processing (OLTP) data entered into the database, and then Credit Card Transactions streamed from multiple commercial locations to a binary-store in a cloud provider. 
 
 <br>
 <h2><img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/pencil2.png">5.2 Solution Walkthrough</h2>
 
-If you are taking this course in-class, the instructor will walk through this example with you. If you are taking it online, the steps below will lead you through creating your own example solution.
-
+If you are taking this course in-class, the instructor will walk through this example with you. If you are taking it online, the steps below will lead you through creating your own example solution. The documentation and other references you have seen throughout this course will help you build your solution.
 <br>
 
-<img style="height: 400; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);" src="https://docs.microsoft.com/en-us/sql/big-data-cluster/media/concept-security/cluster_endpoints.png">
 
-<br>
+<p><img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/point1.png"><b>Activity: Build an End-To-End Analytics Solution with SQL Server Big Data Clusters and Red Had Open Data Hub</b></p>
 
-<p><img style="float: left; margin: 0px 15px 15px 0px;" src="../graphics/point1.png"><b>Activity: TODO: Activity Name</b></p>
-
-TODO: Activity Description and tasks
-
-<p><img style="margin: 0px 15px 15px 0px;" src="../graphics/checkmark.png"><b>Description</b></p>
-
-TODO: Enter activity description with checkbox
-
-<p><img style="margin: 0px 15px 15px 0px;" src="../graphics/checkmark.png"><b>Steps</b></p>
-
-TODO: Enter activity steps description with checkbox
+ - Acting as the IT Department at the organization, set up a Red Hat OpenShift cluster (This should already be complete, you can review your solution.)
+ - Acting as the IT Department, install a SQL Server Big Data Cluster on the OpenShift environment, and document the endpoints and security for communication to the appropriate developers and engineers (This should already be complete, you can review your solution.)
+ - Acting as the Data Engineer, create an Extract, Load and Transform (ELT) process using Spark code in a Jupyter Notebook to ingest data from the cloud binary store into the Storage Pool HDFS location. [Example here](https://docs.microsoft.com/en-us/sql/big-data-cluster/tutorial-data-pool-ingest-spark?view=sql-server-ver15)
+ - Acting as the Database administrator, use PolyBase in SQL Server to create an External Table which allows access to the HDFS data, joining it with OLTP Database Tables to create a query and reporting feature for Line-Of-Business users. [Example here](https://docs.microsoft.com/en-us/sql/big-data-cluster/tutorial-query-hdfs-storage-pool?view=sql-server-ver15)
+ - Acting as the Data Scientist, use those data sets to [experiment, train, and persist a Fraud Detection model](https://www.kaggle.com/jayeshbali/credit-card-fraud-detection) using a PySpark Notebook in the Storage Pool, and deploying the resulting model to the App Pool. [Application Pool example here](https://docs.microsoft.com/en-us/sql/big-data-cluster/concept-application-deployment?view=sql-server-ver15)
+ - Optional: Convert the model to an intermediate format using ONNX. [Examples here](https://github.com/onnx/tutorials#:~:text=Converting%20to%20ONNX%20format%20%20%20%20Framework,%20%20built-in%20%2011%20more%20rows) 
+ - Optional: Convert the model from ONNX to Tensorflow to be ingested to the Open Data Hub environment for addition scoring targets and for further analysis, combining further data sets for more permutations. [Example here](https://opendatahub.io/docs/advanced-tutorials/data-exploration.html)  
 
 <p style="border-bottom: 1px solid lightgrey;"></p>
 
-
 <p><img style="margin: 0px 15px 15px 0px;" src="../graphics/owl.png"><b>For Further Study</b></p>
 <ul>
-    <li><a href="url" target="_blank">TODO: Enter courses, books, posts, whatever the student needs to extend their study</a></li>
+    <li><a href="https://opendatahub.io/docs.html" target="_blank">You can learn more about Open Data Hub and how to ingest a model at this reference.</a></li>
 </ul>
 
-Congratulations! You have completed this workshop on <TODO: Enter workshop name>. You now have the tools, assets, and processes you need to extrapolate this information into other applications.
+Congratulations! You have completed this workshop. You now have the tools, assets, and processes you need to extrapolate this information into other applications.

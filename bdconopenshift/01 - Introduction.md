@@ -129,7 +129,7 @@ The data flow starts with standard On-Line Transaction Processing (OLTP) data en
 
 1. The IT Department sets up a Red Hat OpenShift cluster (on-prem or in-cloud)
 2. The IT Department installs a SQL Server Big Data Cluster on the OpenShift environment, and communicates the endpoints and security to the appropriate developers and engineers
-3. The Data Engineering team creates an Extract-Transform and Load (ETL) process using Spark code in a Jupyter Notebook to ingest data from the cloud binary store into the Storage Pool HDFS location
+3. The Data Engineering team creates an Extract, Load and Transform (ELT) process using Spark code in a Jupyter Notebook to ingest data from the cloud binary store into the Storage Pool HDFS location
 4. The Database Administration team uses PolyBase in SQL Server to create an External Table which allows access to the HDFS data, joining it with OLTP Database Tables to create a query and reporting feature for Line-Of-Business users
 5. The Data Science Team uses multiple data sets to [experiment, train, and persist a Fraud Detection model](https://www.kaggle.com/jayeshbali/credit-card-fraud-detection) using a PySpark Notebook in the Storage Pool, and deploying the resulting model to the App Pool
 6. The model is converted to an intermediate format using ONNX
