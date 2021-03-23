@@ -24,7 +24,7 @@ You can view all of the [courses and other workshops our team has created at thi
 
 <img style="float: left; margin: 0px 15px 15px 0px;" src="https://raw.githubusercontent.com/microsoft/sqlworkshops/master/graphics/checkmark.png"> <h3>Learning Objectives</h3>
 
-In this workshop you'll learn how to:
+In this workshop you'll learn more about:
 <br>
 
 - Planning: 
@@ -60,13 +60,11 @@ This workshop expects that you understand Linux, Virtualization, the Kubernetes 
 This workshop uses Red Hat OpenShift and SQL Server Big Data Clusters, with a focus on architecture and implementation of an advanced analytics solution environment.
 
 <table style="tr:nth-child(even) {background-color: #f2f2f2;}; text-align: left; display: table; border-collapse: collapse; border-spacing: 5px; border-color: gray;">
-
   <tr><td style="background-color: Cornsilk; color: black; padding: 5px 5px;">Primary Audience:</td><td style="background-color: Cornsilk; color: black; padding: 5px 5px;">IT Professionals tasked with creating secure advanced analytics environments </td></tr>
   <tr><td>Secondary Audience:</td><td>Data Technology Professionals</td></tr>
   <tr><td style="background-color: Cornsilk; color: black; padding: 5px 5px;">Level: </td><td style="background-color: Cornsilk; color: black; padding: 5px 5px0;">300</td></tr>
   <tr><td>Type:</td><td>In-Person, On-Line, or from github</td></tr>
-  <tr><td style="background-color: Cornsilk; color: black; padding: 5px 5px;">Length: </td><td style="background-color: Cornsilk; color: black; padding: 5px 5px;">TODO: Number of hours</td></tr>
-
+  <tr><td style="background-color: Cornsilk; color: black; padding: 5px 5px;">Length: </td><td style="background-color: Cornsilk; color: black; padding: 5px 5px;">4 hours</td></tr>
 </table>
 
 <p style="border-bottom: 1px solid lightgrey;"></p>
@@ -91,7 +89,7 @@ This is a modular workshop, and in each section, you'll learn concepts, technolo
   
   <tr><td><a href="https://github.com/microsoft/sqlworkshops-bdconopenshift/blob/main/bdconopenshift/02%20-%20Planning.md" target="_blank">02 - Planning </a></td><td> Covers the process for planning the layout, configuration, and other settings for a solution</td></tr>
   
-  <tr><td style="background-color: AliceBlue; color: black;"><a href="https://github.com/microsoft/sqlworkshops-bdconopenshift/blob/main/bdconopenshift/03%20-%20Deployment.md" target="_blank">03 - Deployment and Operation</a> </td><td td style="background-color: AliceBlue; color: black;"> TODO: Module Description</td></tr>  
+  <tr><td style="background-color: AliceBlue; color: black;"><a href="https://github.com/microsoft/sqlworkshops-bdconopenshift/blob/main/bdconopenshift/03%20-%20Deployment.md" target="_blank">03 - Deployment and Operation</a> </td><td td style="background-color: AliceBlue; color: black;"> In this module you'll learn more about how to deploy your solution, and you'll deploy a sample.</td></tr>  
   
   <tr><td><a href="https://github.com/microsoft/sqlworkshops-bdconopenshift/blob/main/bdconopenshift/04%20-%20Optimization.md" target="_blank">04 - Optimizing </a></td><td> Explains the processes, configuration, and other settings to optimize performance for the solution and the criteria to create the proper environment</td></tr>
 
