@@ -1,0 +1,15 @@
+apiVersion: monitoring.coreos.com/v1
+kind: ServiceMonitor
+metadata:
+  name: ccdserviceservicemonitor
+  labels:
+    k8s-app: prometheus
+    team: opendatahub
+  namespace: ccfd
+spec:
+  endpoints:
+    - port: 8090-tcp
+      path: /rest/metrics
+  selector:
+    matchLabels:
+      app: ccd-service

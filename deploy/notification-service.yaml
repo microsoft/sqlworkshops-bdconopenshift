@@ -1,0 +1,99 @@
+---
+kind: DeploymentConfig
+apiVersion: apps.openshift.io/v1
+metadata:
+  name: ccfd-notification-service
+  namespace: ccfd
+  labels:
+    app: ccfd-notification-service
+    app.kubernetes.io/part-of: PAM
+spec:
+  strategy:
+    type: Rolling
+    rollingParams:
+      updatePeriodSeconds: 1
+      intervalSeconds: 1
+      timeoutSeconds: 600
+      maxUnavailable: 25%
+      maxSurge: 25%
+    resources: {}
+    activeDeadlineSeconds: 21600
+  triggers:
+    - type: ConfigChange
+    - type: ImageChange
+      imageChangeParams:
+        automatic: true
+        containerNames:
+          - ccfd-notification-service
+        from:
+          kind: ImageStreamTag
+          namespace: ccfd
+          name: 'ccfd-notification-service:1.1-CCFD'
+  replicas: 1
+  revisionHistoryLimit: 10
+  test: false
+  selector:
+    app: ccfd-notification-service
+    deploymentconfig: ccfd-notification-service
+  template:
+    metadata:
+      labels:
+        app: ccfd-notification-service
+        deploymentconfig: ccfd-notification-service
+    spec:
+      containers:
+        - name: ccfd-notification-service
+          image: ccfd-notification-service:1.1-CCFD
+          ports:
+            - containerPort: 8080
+              protocol: TCP
+          env:
+            - name: BROKER_URL
+              value: 'odh-message-bus-kafka-brokers:9092'
+          resources: {}
+          terminationMessagePath: /dev/termination-log
+          terminationMessagePolicy: File
+          imagePullPolicy: IfNotPresent
+      restartPolicy: Always
+      terminationGracePeriodSeconds: 30
+      dnsPolicy: ClusterFirst
+      securityContext: {}
+      schedulerName: default-scheduler
+---
+kind: Service
+apiVersion: v1
+metadata:
+  name: ccfd-notification-service
+  namespace: ccfd
+  labels:
+    app: ccfd-notification-service
+spec:
+  ports:
+    - name: 8080-tcp
+      protocol: TCP
+      port: 8080
+      targetPort: 8080
+  selector:
+    app: ccfd-notification-service
+    deploymentconfig: ccfd-notification-service
+---
+kind: ImageStream
+apiVersion: image.openshift.io/v1
+metadata:
+  name: ccfd-notification-service
+  namespace: ccfd
+  labels:
+    app: ccfd-notification-service
+spec:
+  lookupPolicy:
+    local: false
+  tags:
+    - name: 1.1-CCFD
+      annotations:
+        openshift.io/imported-from: 'quay.io/odh-workshops/ccfd-business-workflow-tutorial-ccfd-notification-service:1.1-CCFD'
+      from:
+        kind: DockerImage
+        name: 'quay.io/odh-workshops/ccfd-business-workflow-tutorial-ccfd-notification-service:1.1-CCFD'
+      importPolicy: {}
+      referencePolicy:
+        type: Source

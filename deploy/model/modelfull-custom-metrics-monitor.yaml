@@ -1,0 +1,16 @@
+apiVersion: monitoring.coreos.com/v1
+kind: PodMonitor
+metadata:
+  labels:
+    seldon-app: modelfull-modelfull
+    team: opendatahub
+  name: modelfullpodmonitor
+  namespace: ccfd
+spec:
+  podMetricsEndpoints:
+    - interval: 30s
+      path: /prometheus
+      targetPort: metrics
+  selector:
+    matchLabels:
+      seldon-app: modelfull-modelfull
