@@ -1,0 +1,12 @@
+kind: Route
+apiVersion: route.openshift.io/v1
+metadata:
+  name: modelfull
+spec:
+  to:
+    kind: Service
+    name: modelfull-modelfull
+    weight: 100
+  port:
+    targetPort: http
+  wildcardPolicy: None

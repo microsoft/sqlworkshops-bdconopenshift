@@ -1,0 +1,109 @@
+apiVersion: v1
+kind: Template
+metadata:
+  name: kafka-producer
+parameters:
+  - name: NAMESPACE
+    description: The OpenShift project in use
+  - name: S3ENDPOINT
+    description: >
+      The address of your S3 storage, you should use the internal cluster address
+      (normally s3.openshift-storage.svc)
+  - name: S3BUCKET
+    description: The name of the bucket where the data is
+  - name: FILENAME
+    description: The location of hte `creditcard.csv` file in the data store
+objects:
+  - apiVersion: image.openshift.io/v1
+    kind: ImageStream
+    metadata:
+      labels:
+        template: kafka-producer
+        build: kafka-producer-booth-demo
+      name: kafka-producer
+      namespace: ${NAMESPACE}
+    spec:
+      lookupPolicy:
+        local: false
+  - apiVersion: build.openshift.io/v1
+    kind: BuildConfig
+    metadata:
+      name: kafka-producer
+      namespace: ${NAMESPACE}
+      labels:
+        template: kafka-producer
+    spec:
+      output:
+        to:
+          kind: ImageStreamTag
+          name: kafka-producer:latest
+      source:
+        git:
+          uri: https://github.com/opendatahub-io/Fraud-Detection-with-Business-Workflows-Tutorial.git
+        contextDir: deploy/fraud-detection-producer-consumer-master
+        type: Git
+      strategy:
+        sourceStrategy:
+          env:
+          - name: APP_SCRIPT
+            value: appProducer.sh
+          - name: GIT_SSL_NO_VERIFY
+            value: 'false'
+          from:
+            kind: DockerImage
+            name: centos/python-36-centos7
+          forcePull: true
+        type: Source
+      triggers:
+        - type: ConfigChange
+  - apiVersion: v1
+    kind: DeploymentConfig
+    metadata:
+      labels:
+        template: kafka-producer
+        app: kafka-producer
+      name: kafka-producer-dc
+      namespace: ${NAMESPACE}
+    spec:
+      replicas: 1
+      strategy:
+        type: Rolling
+      template:
+        metadata:
+          labels:
+            app: kafka-producer
+        spec:
+          containers:
+          - name: producer
+            env:
+            - name: ACCESS_KEY_ID
+              valueFrom:
+                secretKeyRef:
+                  name: keysecret
+                  key: accesskey
+            - name: SECRET_ACCESS_KEY
+              valueFrom:
+                secretKeyRef:
+                  name: keysecret
+                  key: secretkey
+            - name: topic
+              value: "odh-demo"
+            - name: s3endpoint
+              value: ${S3ENDPOINT}
+            - name: s3bucket
+              value: ${S3BUCKET}
+            - name: filename
+              value: ${FILENAME}
+            - name: bootstrap
+              value: "odh-message-bus-kafka-bootstrap:9092"
+          restartPolicy: Always
+      triggers:
+        - type: ConfigChange
+        - type: ImageChange
+          imageChangeParams:
+            automatic: true
+            containerNames:
+              - producer
+            from:
+              kind: ImageStreamTag
+              name: kafka-producer:latest

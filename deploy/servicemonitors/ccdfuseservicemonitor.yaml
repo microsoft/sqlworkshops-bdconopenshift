@@ -1,0 +1,15 @@
+apiVersion: monitoring.coreos.com/v1
+kind: ServiceMonitor
+metadata:
+  name: ccdfuseservicemonitor
+  labels:
+    k8s-app: prometheus
+    team: opendatahub
+  namespace: ccfd
+spec:
+  endpoints:
+    - port: 8091-tcp
+      path: /prometheus
+  selector:
+    matchLabels:
+      app: ccd-fuse

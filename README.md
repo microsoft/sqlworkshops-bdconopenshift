@@ -95,6 +95,8 @@ This is a modular workshop, and in each section, you'll learn concepts, technolo
 
   <tr><td><a href="https://github.com/microsoft/sqlworkshops-bdconopenshift/blob/main/bdconopenshift/05%20-%20Open%20Data%20Hub.md" target="_blank">05 - Open Data Hub </a></td><td> Demonstrates the integration between SQL Server Big Data Clusters and the Open Data Hub project</td></tr>
 
+  <tr><td><a href="https://github.com/microsoft/sqlworkshops-bdconopenshift/blob/main/bdconopenshift/06%20-%20CCFD%20with%20ODH.md" target="_blank">06 - Fraud Detection with Open Data Hub </a></td><td> Demonstrates how to deploy a model trained with SQL Server Big Data Clusters as an intelligent application with Open Data Hub</td></tr>
+
 </table>
 
 <p style="border-bottom: 1px solid lightgrey;"></p>

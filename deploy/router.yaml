@@ -1,0 +1,125 @@
+---
+kind: DeploymentConfig
+apiVersion: apps.openshift.io/v1
+metadata:
+  name: ccd-fuse
+  namespace: ccfd
+  labels:
+    app: ccd-fuse
+    app.kubernetes.io/part-of: PAM
+spec:
+  strategy:
+    type: Rolling
+    rollingParams:
+      updatePeriodSeconds: 1
+      intervalSeconds: 1
+      timeoutSeconds: 600
+      maxUnavailable: 25%
+      maxSurge: 25%
+    resources: {}
+    activeDeadlineSeconds: 21600
+  triggers:
+    - type: ConfigChange
+    - type: ImageChange
+      imageChangeParams:
+        automatic: true
+        containerNames:
+          - ccd-fuse
+        from:
+          kind: ImageStreamTag
+          namespace: ccfd
+          name: 'ccd-fuse:1.1-CCFD'
+  replicas: 1
+  revisionHistoryLimit: 10
+  test: false
+  selector:
+    app: ccd-fuse
+    deploymentconfig: ccd-fuse
+  template:
+    metadata:
+      annotations:
+        prometheus.io/path: /prometheus
+        prometheus.io/port: '8091'
+        prometheus.io/scrape: 'true'
+      labels:
+        app: ccd-fuse
+        deploymentconfig: ccd-fuse
+    spec:
+      containers:
+        - name: ccd-fuse
+          image: ccd-fuse:1.1-CCFD
+          ports:
+            - containerPort: 8091
+              protocol: TCP
+            - containerPort: 8778
+              protocol: TCP
+            - containerPort: 9779
+              protocol: TCP
+          env:
+            - name: BROKER_URL
+              value: 'odh-message-bus-kafka-brokers:9092'
+            - name: CUSTOMER_NOTIFICATION_TOPIC
+              value: ccd-customer-outgoing
+            - name: CUSTOMER_RESPONSE_TOPIC
+              value: ccd-customer-response
+            - name: KAFKA_TOPIC
+              value: odh-demo
+            - name: KIE_SERVER_URL
+              value: 'http://ccd-service:8090'
+            - name: SELDON_ENDPOINT
+              value: api/v0.1/predictions
+            - name: SELDON_URL
+              value: 'http://modelfull-modelfull:8000'
+            - name: FRAUD_THRESHOLD
+              value: '0.5'
+          resources: {}
+          terminationMessagePath: /dev/termination-log
+          terminationMessagePolicy: File
+          imagePullPolicy: IfNotPresent
+      restartPolicy: Always
+      terminationGracePeriodSeconds: 30
+      securityContext: {}
+      schedulerName: default-scheduler
+---
+kind: Service
+apiVersion: v1
+metadata:
+    name: ccd-fuse
+    namespace: ccfd
+    labels:
+      app: ccd-fuse
+spec:
+    ports:
+    - name: 8091-tcp
+      protocol: TCP
+      port: 8091
+      targetPort: 8091
+    - name: 8778-tcp
+      protocol: TCP
+      port: 8778
+      targetPort: 8778
+    - name: 9779-tcp
+      protocol: TCP
+      port: 9779
+      targetPort: 9779
+    selector:
+      app: ccd-fuse
+      deploymentconfig: ccd-fuse
+---
+kind: ImageStream
+apiVersion: image.openshift.io/v1
+metadata:
+    name: ccd-fuse
+    namespace: ccfd
+    labels:
+      app: ccd-fuse
+spec:
+    lookupPolicy:
+      local: false
+    tags:
+      - name: 1.1-CCFD
+        from:
+          kind: DockerImage
+          name: 'quay.io/odh-workshops/ccfd-business-workflow-tutorial-ccd-fuse:1.1-CCFD'
+        referencePolicy:
+          type: Source
